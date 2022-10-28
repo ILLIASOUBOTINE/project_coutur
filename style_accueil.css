@@ -7,7 +7,7 @@
 /******************** Backgraund start****************************** */
 
  html{
-  background-image: url(/imgs/fond_couture.png);
+  background-image: url(imgs/fond_couture.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -109,7 +109,7 @@ header {
 .btn_nav > a:before {
   content: "";
   display: block;
-  background: url(/imgs/sewing.png);
+  background: url(imgs/sewing.png);
   background-size: cover;
   width: 50px;
   height: 50px;

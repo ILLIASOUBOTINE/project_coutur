@@ -21,18 +21,10 @@
 
 /******************** Wraper start****************************** */
 .wraper {
-  display: grid;
- 
- 
-
- 
-
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto);
-  grid-template-areas:
-  'hd' 
-  'mn'
-  'ft';
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  justify-content: space-between;
 }
 
 header {

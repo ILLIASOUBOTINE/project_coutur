@@ -15,6 +15,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    /* Insertion des polices Langar et Laila Regular */
+    
     @font-face {
         font-family: 'Langar';
         src: url('Langar-Regular.eot');
@@ -27,6 +30,53 @@
         font-style: normal;
         font-display: swap;
     }
+    @font-face {
+        font-family: 'Laila Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Laila Regular'), url('Laila-Regular.woff') format('woff')
+        url('Laila Regular.ttf') format('truetype');
+        }
+        
+    
+        @font-face {
+        font-family: 'Laila Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Laila Light'), url('Laila-Light.woff') format('woff')
+        url('Laila Light.ttf') format('truetype');
+        }
+        
+    
+        @font-face {
+        font-family: 'Laila Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Laila Medium'), url('Laila-Medium.woff') format('woff')
+        url('Laila Regular.ttf') format('truetype');
+        }
+        
+    
+        @font-face {
+        font-family: 'Laila SemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Laila SemiBold'), url('Laila-SemiBold.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Laila Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Laila Bold'), url('Laila-Bold.woff') format('woff');
+        }
+
+        /* essai pour import de google fonts police Nunito Sans */
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+        
   }
   
   /******************** Backgraund end****************************** */

@@ -15,6 +15,18 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    @font-face {
+        font-family: 'Langar';
+        src: url('Langar-Regular.eot');
+        src: local('Langar Regular'), local('Langar-Regular'),
+            url('Langar-Regular.eot?#iefix') format('embedded-opentype'),
+            url('Langar-Regular.woff2') format('woff2'),
+            url('Langar-Regular.woff') format('woff'),
+            url('Langar-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
   }
   
   /******************** Backgraund end****************************** */
@@ -119,67 +131,7 @@
 
   
   
-  .home_page_section1 {
-    grid-area: sec1;
-    display: grid;
-    grid-template-columns: 1.5fr 2.5fr;
-    width: 90%;
-    background-color: #085d85;
-    border: 1px solid #08425d;
-    border-radius: 50px;
-    align-items: center;
-    justify-items: center;
-    box-sizing: border-box;
-    padding: 20px 0;
-    
-  }
   
-  /* .home_page_section1::before {
-      content: "";
-      display: block;
-      padding-top: 100%;  
-  } */
-  .photo_home_page {
-    display: flex;
-    box-sizing: border-box;
-    padding: 20px 0;
-    justify-content: center;
-    align-items: center;
-    /* padding: 3%; */
-   
-  }
-  
-  .photo_home_page> img{
-    width: 100%;
-    height: 100%;
-    /* margin: 50px; */
-  }
-  
-  
-  /* .photo_home_page > img {
-      /* position: absolute;
-      top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; */
-  
-  .text_home_page {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Laila;
-    font-style: normal;
-    font-size: 24px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 37px;
-    
-    /* margin: 186px 16px 240px 24px; */
-  }
-
-
  
   /******************** Main end****************************** */
   

@@ -1,0 +1,281 @@
+main {
+  
+  display: grid;
+  /* height: 640px; */
+  grid-template-columns: repeat(6, 1fr);
+ grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+                'sec1 sec1 sec1 sec1 calen calen'
+                'sec1 sec1 sec1 sec1 evv evv'
+                'sec1 sec1 sec1 sec1 evp evp'
+                ;
+  align-items: center;
+  justify-items: center;
+
+  box-sizing: border-box;
+}
+
+
+.home_page_section1 {
+  grid-area: sec1;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  width: 90%;
+  background-color: #085d85;
+  border: 1px solid #08425d;
+  border-radius: 50px;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 20px 0;
+  
+}
+
+/* .home_page_section1::before {
+    content: "";
+    display: block;
+    padding-top: 100%;  
+} */
+.photo_home_page {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  /* padding: 3%; */
+ 
+}
+
+.photo_home_page> img{
+  width: 100%;
+  height: 100%;
+  /* margin: 50px; */
+}
+
+
+/* .photo_home_page > img {
+    /* position: absolute;
+    top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+
+.text_home_page {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Laila;
+  font-style: normal;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 37px;
+  
+  /* margin: 186px 16px 240px 24px; */
+}
+
+/* .home_page_section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  width: 30%;
+  max-width: 330px;
+  
+} */
+
+.calendrie_home_page {
+  grid-area: calen;
+  
+  
+  
+  background-color: #085d85;
+  border: #08425d solid 1px;
+  border-radius: 30px;
+  text-align: center;
+
+  
+}
+
+.calendrie_home_page img {
+  width: 100%;
+  height: 100%;
+
+  
+}
+
+/* .home_page_evenement {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 60%;
+  
+  text-align: center;
+
+  justify-content: space-between;
+} */
+
+.event_venir {
+  grid-area: evv;
+  display: flex;
+  flex-direction: column;
+ 
+  background: #085d85;
+  border: #08425d solid 1px;
+  border-radius: 30px;
+  text-align: center;
+
+  justify-content: space-around;
+}
+
+.event_passe {
+  grid-area: evp;
+  display: flex;
+  flex-direction: column;
+  
+  background: #085d85;
+  border: #08425d solid 1px;
+  border-radius: 30px;
+  text-align: center;
+
+  justify-content: space-around;
+}
+
+/* .event_text {
+  font-family: Langar;
+  font-weight: bold;
+  font-size: 32px;
+  color: #fffefe;
+  text-decoration: none;
+} */
+
+/* .event_btn {
+  font-family: Langar;
+  font-weight: 200;
+  font-size: 24px;
+  color: #fffefe;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 70%;
+  height: 30%;
+  min-height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+} */
+
+/* @media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+   
+    align-items: center;
+    height: 80vh;
+    margin-top:  0;
+  }
+
+  .home_page_section1 {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 60%;
+    min-height: 360px;
+    min-width: 400px;
+    margin-top:  0;
+    
+
+
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .home_page_section2 {
+    flex-direction: row;
+    padding-top: 3%;
+    width: 90%;
+    max-width: 1000px;
+    height: 30%;
+    justify-content: center;
+    margin-top:  0;
+  }
+
+  .calendrie_home_page {
+    position: absolute;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+
+    min-width: 30px;
+  }
+
+  .home_page_evenement {
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+  }
+
+  .event_venir {
+    width: 45%;
+    height: 90%;
+
+    text-align: center;
+  }
+
+  .event_passe {
+    width: 45%;
+    height: 60%;
+
+    border-radius: 30px;
+  }
+} */
+
+/* @media screen and (max-width: 800px) {
+  .text_home_page {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .event_text {
+    font-size: 18px;
+}
+  
+  .event_btn {
+    font-size: 16px;
+    
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .text_home_page {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .event_text {
+    font-size: 16px;
+}
+  
+  .event_btn {
+    font-size: 14px;
+    
+  }
+} */
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 760px){
+    
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px){
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    
+}

@@ -1,158 +1,15 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-/******************** Backgraund start****************************** */
-
- html{
-  background-image: url(imgs/fond_couture.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/******************** Backgraund end****************************** */
-
-/******************** Wraper start****************************** */
-.wraper {
-  display: flex;
-  flex-direction: column; 
-  justify-content: space-between;
- 
-
- height: 100vh;
-  
- 
- /* display: grid;
-
- align-content: space-between;
- gap: 20px;
-  grid-template-columns: 1fr; */
-  /* grid-template-rows:  150px 1fr  90px ; */
-  /* grid-auto-rows: minmax(50px, auto); */
-  /* grid-template-areas:
-  'hd' 
-  'mn'
-  'ft';  */
-}
-
- /* header {
-  grid-area: hd;
-}
-main {
-  grid-area: mn;
-}
-footer {
-  grid-area: ft;
-} */
-
-/******************** Wraper end****************************** */
-
-/******************** Header start****************************** */
-header {
-  flex-shrink: 0;
-  margin-bottom: 20px;
-  /* padding-bottom:  20px; */
-  position: relative;
-  /* height: 150px; */
-  /* height: 12vh; */
-
-  background: #feb700;
-  display: grid;
-
-  grid-template-columns: repeat(6, 1fr);
-
-  grid-template-areas: "logo title title nav nav nav";
-  align-items: center;
-  justify-items: center;
-
-  box-sizing: border-box;
-}
-
-.logo {
-  grid-area: logo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo > img {
-  width: 100%;
-  height: 100%;
-}
-
-.title {
-  grid-area: title;
-  font-family: Langar;
-  font-style: Regular;
-  /* font-size: 36px; */
-  font-size: 3rem;
-  color: #08425d;
-  /* min-width: max-content; */
-}
-
-.nav_main {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8%;
-  align-items: center;
-  justify-items: center;
-}
-
-.nav_menu {
-  display: none;
-  grid-area: navm;
-}
 
 
 
-.btn_nav > a:before {
-  content: "";
-  display: block;
-  background: url(imgs/sewing.png);
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-}
 
-.btn_nav > a {
-  /* margin: 0 auto; */
-
-  text-decoration: none;
-  font-family: Langar;
-  font-style: normal;
-  /* font-size: 20px; */
-  font-size: 1.5rem;
-  color: black;
-}
-
-a:hover {
-  color: #feffff;
-}
-
-/******************** Header end****************************** */
 
 /******************** Main start****************************** */
 main {
  
- 
-  display: grid;
-  
+ display: grid;
   grid-template-columns: 2fr 1fr;
-
-  align-items: start;
+align-items: start;
   justify-items: center;
-/* margin-top: 20px;
-margin-bottom: 20px; */
-  
 }
 
 .home_page_even_phone, 
@@ -174,39 +31,27 @@ margin-bottom: 20px; */
   
   display: grid;
   grid-template-columns: 2fr 2.5fr;
-  
-   height: 100%; 
-   
+  height: 100%; 
   background-color: #085d85;
   border: 1px solid #08425d;
   border-radius: 50px;
   align-items: center;
   justify-items: center;
   margin-left: 10%;
-
-  
 }
-
 
 .photo_home_page {
   height: 100%;
   display: flex;
-  
   padding: 20px 0;
   justify-content: center;
   align-items: center;
-  
- 
 }
 
 .photo_home_page> img{
   width: 100%;
   height: 100%;
-  
-  
 }
-
-
 
 .text_home_page {
   width: 90%;
@@ -222,8 +67,6 @@ margin-bottom: 20px; */
   text-align: center;
   /* line-height: 37px; */
   line-height: 3.3vw;
-  
-  
 }
 
 .text_home_page > p {
@@ -232,34 +75,20 @@ margin-bottom: 20px; */
 
 .home_page_section2 {
   display: grid;
-  /* grid-template-columns:  1fr; */
-  grid-template-rows: 1fr 2fr;
+ grid-template-rows: 1fr 2fr;
   width: 100%; 
    height: 100%;
   align-items: start;
   justify-items: center;
-  /* grid-area: sec2; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-  
-  /* width: 30%; */
-  /* max-width: 330px; */
-  
 }
 
 .calendrie_home_page {
-  
-  width: 70%;
+   width: 70%;
   height: 90%;
-  /* width: 90%; */
-  
-  background-color: #085d85;
+ background-color: #085d85;
   border: #08425d solid 1px;
   border-radius: 30px;
   text-align: center;
-
-  
 }
 
 .calendrie_home_page a {
@@ -267,7 +96,6 @@ margin-bottom: 20px; */
   width: 100%;
   height: 100%;
   align-items: center;
-
   justify-content: center;
 }
 
@@ -280,20 +108,13 @@ margin-bottom: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  width: 70%;
+   width: 70%;
   height: 100%;
-
-  background: #085d85;
+ background: #085d85;
   border: #08425d solid 1px;
   border-radius: 30px;
   text-align: center;
-  
-
-  
 }
-
-
 
 .event_venir {
   
@@ -371,83 +192,13 @@ margin-bottom: 20px; */
 
 /******************** Main end****************************** */
 
-/******************** Footer start****************************** */
 
-footer {
-  flex-shrink: 0;
-  margin-top: 20px;
-  height: 90px;
-  background-color: #feb700;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* padding: 10px; */
-}
-
-.icons_footer {
-  width: 30%;
-  height: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.icons_footer > img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 24px;
-  width: 24px;
-}
-
-.text_footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  height: 40%;
-  font-family: Langar;
-  font-size: 1rem;
-}
-/******************** Footer end****************************** */
 
 /******************** @ Media screen  start****************************** */
+
+
 @media screen and (max-width: 320px) {
-  /************* Header start**********/
-  header {
-    height: 80px;
-
-    grid-template-areas: "logo title title title navm navm";
-  }
-
-  .logo {
-    width: 73px;
-    height: 55px;
-  }
-
-  /* .title{
-    font-size: 1.5rem;
-  } */
-  .nav_main,
-  .title {
-    display: none;
-  }
-
-  .nav_menu {
-    display: flex;
-  }
-
-  .btn_nav > a:before {
-    width: 40px;
-    height: 40px;
-  }
-
-  .btn_nav > a {
-    font-size: 1rem;
-  }
-  /************* Header end**********/
-
+ 
     /************* Main start**********/
     html{
       background-image: url(imgs/photo_home_page.png);
@@ -462,8 +213,7 @@ footer {
     .home_page_section1 {
       display: flex;
       justify-content: center;
-     
-      height: 100%; 
+     height: 100%; 
       width: 90%;
       background-color: rgba(255, 240, 189, 0.6);
       border-radius: 20px;
@@ -475,7 +225,6 @@ footer {
       width: 95%;
       align-items: space-around;
         /* font-size: 24px; */
-      
       font-size:calc(14px + 1vw);
       color: #000000;
       text-align: center;
@@ -529,7 +278,6 @@ footer {
       padding: 5px;
     }
   
-    
     .text_anonce >p,h4 {
       font-size:calc(14px + 1vw);
       line-height:calc(21px + 1.5vw);
@@ -558,7 +306,6 @@ footer {
     }
   
     .event_text {
-      
       font-size:calc(12px + 1vw);
     }
   
@@ -567,61 +314,13 @@ footer {
       width: 70%;
       height: 45%;
       border-radius: 10px;
-     
     }
   
+  /************* Main end**********/
   
-  
-    /************* Main end**********/
-  /************* Footer start**********/
-  footer {
-    height: 50px;
-  }
-
-  .icons_footer {
-    width: 60%;
-  }
-  .text_footer {
-    font-size: 0.7rem;
-    width: 60%;
-  }
-
-
-  /************* Footer end**********/
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  /************* Header start**********/
-  header {
-    height: 80px;
-
-    grid-template-areas: "logo title title title navm navm";
-  }
-
-  .logo {
-    width: 73px;
-    height: 55px;
-  }
-
-  .title {
-    font-size: 1.2rem;
-  }
-  .nav_main {
-    display: none;
-  }
-
-  .nav_menu {
-    display: flex;
-  }
-
-  .btn_nav > a:before {
-    width: 40px;
-    height: 40px;
-  }
-
-  .btn_nav > a {
-    font-size: 1rem;
-  }
-  /************* Header end**********/
+ 
 
   /************* Main start**********/
   html{
@@ -650,7 +349,6 @@ footer {
     width: 95%;
     align-items: space-around;
       /* font-size: 24px; */
-    
     font-size:calc(14px + 1vw);
     color: #000000;
     text-align: center;
@@ -745,56 +443,11 @@ footer {
    
   }
 
-
-
-  /************* Main end**********/
-
-
-  /************* Footer start**********/
-  footer {
-    height: 50px;
-}
-
-.icons_footer {
-    width: 60%;
-    
-}
-.text_footer {
- font-size: 0.7rem;
- width: 60%;
-}
-  /************* Footer end**********/
+/************* Main end**********/
 }
 
 @media screen and (min-width: 480px) and (max-width: 760px) {
-  /************* Header start**********/
-  header {
-    height: 100px;
-
-    grid-template-areas: "logo title title title navm navm";
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .nav_main {
-    display: none;
-  }
-
-  .nav_menu {
-    display: flex;
-  }
-
-  .btn_nav > a:before {
-    width: 50px;
-    height: 50px;
-  }
-
-  .btn_nav > a {
-    font-size: 1.2rem;
-  }
-  /************* Header end**********/
+  
 
   /************* Main start**********/
   main {
@@ -841,7 +494,6 @@ footer {
      background: #085d85;
     border: #08425d solid 1px;
     border-radius: 30px; 
-   
   }
  
   .event_text {
@@ -852,53 +504,14 @@ footer {
     font-size: 3vw;
     width: 80%;
     height: 45%;
-   
   }
   
-  
-
-
   /************* Main end**********/
-  /************* Footer start**********/
-
-  footer {
-    height: 60px;
-}
-
-.icons_footer {
-    width: 40%;
-    
-}
-.text_footer {
- font-size: 0.8rem;
- width: 40%;
-}
-  /************* Footer end**********/
+  
 }
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
-  /************* Header start**********/
-  header {
-    height: 120px;
-
-    grid-template-areas: "logo . nav nav nav nav";
-  }
-  .nav_main {
-    gap: 7%;
-  }
-
-  .title {
-    display: none;
-  }
-  .btn_nav > a:before {
-    width: 50px;
-    height: 50px;
-  }
-
-  .btn_nav > a {
-    font-size: 1.3rem;
-  }
-  /************* Header end**********/
+  
 /************* Main start**********/
   main {
     height: 640px;
@@ -933,48 +546,15 @@ footer {
 
   /************* Main end**********/
   
-  /************* Footer start**********/
-  footer {
-    height: 70px;
-}
-  /************* Footer end**********/
+  
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  /************* Header start**********/
-  header {
-    height: 145px;
-
-    grid-template-areas: "logo title title nav nav nav";
-  }
-  .nav_main {
-    gap: 5%;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-  .btn_nav > a:before {
-    width: 50px;
-    height: 50px;
-  }
-
-  .btn_nav > a {
-    font-size: 1.4rem;
-  }
-  /************* Header end**********/
-  /************* Footer start**********/
-  /************* Footer end**********/
+  
+ 
 }
 @media screen and (min-width: 1280px) {
-  /************* Header start**********/
-  header {
-    height: 150px;
-  }
-  /************* Header end**********/
-
-  /************* Footer start**********/
-  /************* Footer end**********/
+  
 }
 
 /******************** @ Media screen  end****************************** */

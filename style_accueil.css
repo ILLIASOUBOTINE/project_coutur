@@ -111,10 +111,7 @@ header {
   grid-area: navm;
 }
 
-.btn_nav {
-  /* display: flex;
-    flex-direction: column; */
-}
+
 
 .btn_nav > a:before {
   content: "";

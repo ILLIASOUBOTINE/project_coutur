@@ -21,19 +21,19 @@
 
 /******************** Wraper start****************************** */
 .wraper {
-  /* display: flex;
+  display: flex;
   flex-direction: column; 
-  justify-content: space-between; */
+  justify-content: space-between;
  
 
  height: 100vh;
   
  
- display: grid;
+ /* display: grid;
 
  align-content: space-between;
  gap: 20px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; */
   /* grid-template-rows:  150px 1fr  90px ; */
   /* grid-auto-rows: minmax(50px, auto); */
   /* grid-template-areas:
@@ -56,6 +56,8 @@ footer {
 
 /******************** Header start****************************** */
 header {
+  flex-shrink: 0;
+  margin-bottom: 20px;
   /* padding-bottom:  20px; */
   position: relative;
   /* height: 150px; */
@@ -144,7 +146,7 @@ a:hover {
 /******************** Main start****************************** */
 main {
  
-
+ 
   display: grid;
   
   grid-template-columns: 2fr 1fr;
@@ -356,13 +358,27 @@ margin-bottom: 20px; */
   text-align: center;
 }
 
+.event_btn:hover {
+  color: #feb700;
+  border: #feb700 solid;
+}
+
+.event_text:hover {
+  color: #feb700;
+
+}
+
+.calendrie_home_page:hover {
+  background: #feb700 ;
+}
 
 /******************** Main end****************************** */
 
 /******************** Footer start****************************** */
 
 footer {
-  
+  flex-shrink: 0;
+  margin-top: 20px;
   height: 90px;
   background-color: #feb700;
   display: flex;

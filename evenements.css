@@ -1,10 +1,24 @@
 body{
-    display: flex;
-    flex-direction: column;
+   height: 300vh;
 }
+
 .title_evt{
-    font-family: Langar;
+    font-family: 'Langar-Regular';
+    font-weight: 400;
+    color: #FFF0BD;
+    background-color: #085D85;
+    width: 75%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 3px 3px 3px #08425D;
+    margin: 0px 12.5% 0px 12.5%;
+
+}
+.top{
+    position: relative;
+    top: 20px;
 }
 p{
-    font-family: 'Laila Regular';
+    font-family: 'Laila-Regular';
 }

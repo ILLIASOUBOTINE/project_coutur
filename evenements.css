@@ -11,14 +11,47 @@ body{
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-    box-shadow: 3px 3px 3px #08425D;
+    box-shadow: 3px 3px 2px #08425D;
     margin: 0px 12.5% 0px 12.5%;
 
 }
 .top{
     position: relative;
-    top: 20px;
+    top: 0px;
 }
 p{
-    font-family: 'Laila-Regular';
+    font-family: 'Laila-Regular',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 60px;
+}
+.card{
+    background-color: #085D85;
+    color: #FFF0BD;
+    text-align: center;
+    margin: 40px 12.5% 40px 12.5%;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2em;
+    box-shadow: 3px 3px 2px #08425D;
+}
+.title_card{
+    font-family: 'Langar-Regular';
+    font-weight: 400;  
+}
+h5{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bandeau_card{
+    width: 90%;
+    height: 8vh;
+}
+button{
+    margin: 40px 60px 20px 60px;
+    padding: 5px 10px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: #FFF0BD;
+    font-size: 12px;
+    box-shadow: 3px 3px 2px #08425D;
 }

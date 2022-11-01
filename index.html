@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_origin.css">
     <link rel="stylesheet" href="style_accueil.css" />
 
     <title>Accueil</title>
@@ -34,8 +35,17 @@
         </nav>
         <nav class="nav_menu">
           <div class="btn_nav">
-            <a href="#">Menu</a>
-          </div>
+            <a href="#" class="dropbtn">Menu</a>
+          </div>  
+            <div class="dropdown-content">
+              <a href="#">Accueil</a>
+              <a href="#">Realisations</a>
+              <a href="#">Planning</a>
+              <a href="#">Equipe</a>
+              <a href="#">Contact</a>
+              
+            </div>
+          
         </nav>
       </header>
 
@@ -53,11 +63,11 @@
           </div>
         </section>
 
-        <!-- <section class="home_page_section2" > -->
+        <section class="home_page_section2" >
         <div class="calendrie_home_page">
           <a href="#"><img src="imgs/calendrie.png" alt="" /></a>
         </div>
-        <!-- <div class="home_page_evenement"> -->
+        <div class="home_page_evenement">
         <div class="event_venir">
           <a class="event_text" href="#">Evenements a venir</a>
           <a class="event_btn" href="#">Noël </a>
@@ -68,9 +78,36 @@
           <a class="event_btn" href="#">Halloween</a>
           <a class="event_btn" href="#">Pâques</a>
         </div>
+       </div> 
+      </section>
 
-        <!-- </div> -->
-        <!-- </section> -->
+      <section class="home_page_anonce_phone">
+          <div class="photo_anonce"><img src="imgs/guirlande_noel_1.png" alt=""></div>
+          <div class="text_anonce">
+            <h3>Créations de Noël</h3> 
+            <h4>Du 5 au 23 décembre.</h4>
+            <p>Retrouvez-nous dans cet atelier annuel thèmatique, 
+              Redècorez votre intèrieur, prèparez vos cadeaux, fabriquez votre sapin de Noël, 
+              calendrier de l’avent, guirlandes, 
+              cette annèe encore nous regorgeons d’inspiration 
+              pour faire de Noël une fête à chaque fois renouvellèe
+            </p>
+          </div>
+
+      </section>
+      
+      <section class="home_page_even_phone">
+         <div class="event_venir">
+          <a class="event_text" href="#">Evenements a venir</a>
+          <a class="event_btn" href="#">Noël </a>
+        </div>
+
+        <div class="event_passe">
+          <a class="event_text" href="#">Evenements passés</a>
+          <a class="event_btn" href="#">Halloween</a>
+        </div>
+       
+        </section>
       </main>
 
       <footer>

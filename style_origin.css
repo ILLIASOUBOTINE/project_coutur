@@ -4,6 +4,63 @@
     border: 0;
     box-sizing: border-box;
   }
+
+   /****************** Insertion des polices Langar et Laila Regular *********************/
+   @font-face {
+    font-family: 'Langar-Regular';
+    src: url('fonts/Langar-Regular.eot');
+    src:  local('Langar-Regular'), local('Langar-Regular'),
+        url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Langar-Regular.woff2') format('woff2'),
+        url('fonts/Langar-Regular.woff') format('woff'),
+        url('fonts/Langar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Laila-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Laila-Regular'), url('fonts/Laila-Regular.woff') format('woff')
+    url('fonts/Laila-Regular.ttf') format('truetype');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Laila-Light'), url('fonts/Laila-Light.woff') format('woff')
+    url('fonts/Laila-Light.ttf') format('truetype');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Laila-Medium'), url('fonts/Laila-Medium.woff') format('woff')
+    url('fonts/Laila-Regular.ttf') format('truetype');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Laila-SemiBold'), url('fonts/Laila-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Laila-Bold'), url('fonts/Laila-Bold.woff') format('woff');
+    }
+
+    
   /******************** Backgraund start****************************** */
   
    html{
@@ -15,69 +72,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-    /* Insertion des polices Langar et Laila Regular */
-    
-    @font-face {
-        font-family: 'Langar';
-        src: url('Langar-Regular.eot');
-        src: local('Langar Regular'), local('Langar-Regular'),
-            url('Langar-Regular.eot?#iefix') format('embedded-opentype'),
-            url('Langar-Regular.woff2') format('woff2'),
-            url('Langar-Regular.woff') format('woff'),
-            url('Langar-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-    @font-face {
-        font-family: 'Laila Regular';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Laila Regular'), url('Laila-Regular.woff') format('woff')
-        url('Laila Regular.ttf') format('truetype');
-        }
-        
-    
-        @font-face {
-        font-family: 'Laila Light';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Laila Light'), url('Laila-Light.woff') format('woff')
-        url('Laila Light.ttf') format('truetype');
-        }
-        
-    
-        @font-face {
-        font-family: 'Laila Medium';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Laila Medium'), url('Laila-Medium.woff') format('woff')
-        url('Laila Regular.ttf') format('truetype');
-        }
-        
-    
-        @font-face {
-        font-family: 'Laila SemiBold';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Laila SemiBold'), url('Laila-SemiBold.woff') format('woff');
-        }
-        
-    
-        @font-face {
-        font-family: 'Laila Bold';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Laila Bold'), url('Laila-Bold.woff') format('woff');
-        }
-
-        /* essai pour import de google fonts police Nunito Sans */
-
-        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-
-        
-  }
+ }
   
   /******************** Backgraund end****************************** */
   
@@ -294,7 +289,7 @@
       font-size: 1rem;
     }
     .dropdown-content {
-      top: 58px;
+       top: 58px; 
      }
     /************* Header end**********/
     /************* Footer start**********/

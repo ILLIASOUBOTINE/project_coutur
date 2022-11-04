@@ -18,47 +18,6 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'Laila-Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Laila-Regular'), url('fonts/Laila-Regular.woff') format('woff')
-    url('fonts/Laila-Regular.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Laila-Light'), url('fonts/Laila-Light.woff') format('woff')
-    url('fonts/Laila-Light.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-Medium'), url('fonts/Laila-Medium.woff') format('woff')
-    url('fonts/Laila-Regular.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-SemiBold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-SemiBold'), url('fonts/Laila-SemiBold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-Bold'), url('fonts/Laila-Bold.woff') format('woff');
-    }
 
       /************************* Background start************************************ */
 

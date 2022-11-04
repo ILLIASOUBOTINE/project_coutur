@@ -5,6 +5,72 @@
     box-sizing: border-box;
   }
 
+
+
+   /****************** Insertion des polices Langar et Laila Regular *********************/
+   @font-face {
+    font-family: 'Langar';
+    src: url('fonts/Langar-Regular.eot');
+    src:  local('Langar-Regular'), local('Langar-Regular'),
+        url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Langar-Regular.woff2') format('woff2'),
+        url('fonts/Langar-Regular.woff') format('woff'),
+        url('fonts/Langar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Laila';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Laila-Regular'), url('fonts/Laila-Regular.woff') format('woff')
+    url('fonts/Laila-Regular.ttf') format('truetype');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Laila-Light'), url('fonts/Laila-Light.woff') format('woff')
+    url('fonts/Laila-Light.ttf') format('truetype');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Laila-Medium'), url('fonts/Laila-Medium.woff') format('woff')
+    url('fonts/Laila-Regular.ttf') format('truetype');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Laila-SemiBold'), url('fonts/Laila-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Laila-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('fonts/Laila-Bold'), url('fonts/Laila-Bold.woff') format('woff');
+    }
+
+
+    :root {
+      --main_color_blue: #085D85;
+      --main_color_yelow:#feb700;
+      --font_family_main: Langar; 
+      --font_family_seconder: Langar; 
+  }
+    
+
       /****************** Insertion des polices Langar et Laila Regular *********************/
   @font-face {
     font-family: 'Langar-Regular';
@@ -38,7 +104,17 @@
   
   /******************** Background end****************************** */
   
+  /******************** Wraper start****************************** */
+  .wraper {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
 
+  /******************** Wraper end****************************** */
+  
   /******************** Header start****************************** */
   header {
     /* position: relative; */
@@ -46,7 +122,7 @@
      flex-shrink: 0;
      margin-bottom: 20px;
   
-    background: #feb700;
+    background:var(--main_color_yelow);
     display: grid;
   
     grid-template-columns: repeat(6, 1fr);
@@ -72,7 +148,8 @@
   
   .title {
     grid-area: title;
-    font-family: 'Langar-Regular';
+    font-family: var(--font_family_main);
+    font-style: Regular;
     /* font-size: 36px; */
     font-size: 3rem;
     color: #08425d;
@@ -105,7 +182,7 @@
     min-width: 100px;
     right: 0;
     top: 70px;
-    background: #feb700;
+    background: var(--main_color_yelow);
     z-index: 1;
   }
   
@@ -116,12 +193,12 @@
     padding: 10px 10px;
     /* font-size: 20px; */
     font-size: 1.5rem;
-    color:#085d85;
+    color: var(--main_color_blue);
   }
 
   .dropdown-content > a:hover{
    
-    background:#085d85; ;
+    background:var(--main_color_blue) ;
   }
 
   .nav_menu:hover .dropdown-content  {
@@ -146,7 +223,7 @@
   
   .btn_nav > a  {
     text-decoration: none;
-    font-family: 'Langar-Regular';
+    font-family:var(--font_family_main);
     font-style: normal;
     /* font-size: 20px; */
     font-size: 1.5rem;
@@ -175,7 +252,7 @@
     flex-shrink: 0;
     margin-top: 20px;
     height: 90px;
-    background-color: #feb700;
+    background-color:var(--main_color_yelow);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,7 +281,7 @@
     align-items: center;
     width: 30%;
     height: 40%;
-    font-family: 'Langar-Regular';
+    font-family: var(--font_family_main);
     font-size: 1rem;
   }
   /******************** Footer end****************************** */
@@ -241,7 +318,7 @@
       font-size: 1rem;
     }
     .dropdown-content {
-      top: 58px;
+       top: 58px; 
      }
     /************* Header end**********/
     /************* Footer start**********/
@@ -274,7 +351,7 @@
     }
   
     .title {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .nav_main {
       display: none;
@@ -322,7 +399,7 @@
     }
   
     .title {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   
     .nav_main {
@@ -379,7 +456,7 @@
     }
   
     .btn_nav > a {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     /************* Header end**********/
     /************* Footer start**********/
@@ -409,7 +486,7 @@
     }
   
     .btn_nav > a {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
     /************* Header end**********/
     /************* Footer start**********/

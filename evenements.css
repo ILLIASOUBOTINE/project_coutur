@@ -1,0 +1,118 @@
+
+  /******************** Wraper start****************************** */
+  .wraper {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: space-between;
+  }
+
+  /******************** Wraper end****************************** */
+  .footer{
+    position: relative;
+    bottom: 0px;
+  }
+/* *********************************bandeau titre************************************ */
+.title_evt{
+    font-family: 'Langar-Regular';
+    font-weight: 400;
+    color: #FFF0BD;
+    background-color: #085D85;
+    width: 75%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 3px 3px 2px #08425D;
+    margin: 0px 12.5% 0px 12.5%;
+
+}
+/******************************* position du bandeau titre du haut *********************/
+.top{
+    position: relative;
+    top: 0px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 60px;
+}
+
+/* ***********************************BANDEAUX DE CARTES************************ */
+.bandeau_card_noel {
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/guirl_noel.png);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+.bandeau_card_hallw{
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/HeaderHalloween1.jpg);
+    background-size: 80%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+.bandeau_card_paq{
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/bandeauPaques1.jpg);
+    background-size: 40%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+/* ********************************MODELE DE CARTE**************************************/
+.card{
+    background-color: #085D85;
+    color: #FFF0BD;
+    text-align: center;
+    margin: 40px 12.5% 40px 12.5%;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2em;
+    box-shadow: 3px 3px 2px #08425D;
+}
+.title_card{
+    font-family: 'Langar-Regular';
+    font-weight: 400; 
+    margin-top: 20px;
+}
+h5{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    margin: 40px 60px 20px 60px;
+    padding: 5px 10px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: #FFF0BD;
+    font-size: 13px;
+    box-shadow: 3px 3px 2px #08425D;
+    font-family: 'Langar-Regular';
+    color: #085D85;
+}
+.images{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+
+}
+.illustr{
+    max-width: 30%;
+    border-radius: 20px;
+}
+.rond{
+    border-radius: 50%;
+    width: 15%;
+    align-self: center;
+}

@@ -70,8 +70,23 @@
       --font_family_seconder: Langar; 
   }
     
-  /******************** Backgraund start****************************** */
-  
+
+      /****************** Insertion des polices Langar et Laila Regular *********************/
+  @font-face {
+    font-family: 'Langar-Regular';
+    src: url('fonts/Langar-Regular.eot');
+    src:  local('Langar-Regular'), local('Langar-Regular'),
+        url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Langar-Regular.woff2') format('woff2'),
+        url('fonts/Langar-Regular.woff') format('woff'),
+        url('fonts/Langar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+      /************************* Background start************************************ */
+
    html{
     background-image: url(imgs/fond_couture.png);
     background-repeat: no-repeat;
@@ -81,9 +96,13 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
- }
+
+
+    
+      
+  }
   
-  /******************** Backgraund end****************************** */
+  /******************** Background end****************************** */
   
   /******************** Wraper start****************************** */
   .wraper {
@@ -169,7 +188,7 @@
   
   .dropdown-content > a{
     text-decoration: none;
-    font-family: Langar;
+    font-family: 'Langar-Regular';
     font-style: normal;
     padding: 10px 10px;
     /* font-size: 20px; */
@@ -187,7 +206,7 @@
   }
 
   .nav_menu:hover .btn_nav>a {
-    color: white;
+    color: #FFF0BD;
   }
 
   .btn_nav > a:before {

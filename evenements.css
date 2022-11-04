@@ -37,7 +37,39 @@ p{
     font-size: 14px;
     margin: 0 60px;
 }
-/* ********************************modèle de carte************************************* */
+
+/* ***********************************BANDEAUX DE CARTES************************ */
+.bandeau_card_noel {
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/guirl_noel.png);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+.bandeau_card_hallw{
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/HeaderHalloween1.jpg);
+    background-size: 80%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+.bandeau_card_paq{
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/bandeauPaques1.jpg);
+    background-size: 40%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+/* ********************************MODELE DE CARTE**************************************/
 .card{
     background-color: #085D85;
     color: #FFF0BD;
@@ -50,17 +82,14 @@ p{
 }
 .title_card{
     font-family: 'Langar-Regular';
-    font-weight: 400;  
+    font-weight: 400; 
+    margin-top: 20px;
 }
 h5{
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
 }
-.bandeau_card{
-    width: 90%;
-    height: 8vh;
-    border-radius: 10px;
-}
+
 button{
     margin: 40px 60px 20px 60px;
     padding: 5px 10px;
@@ -80,7 +109,7 @@ button{
 }
 .illustr{
     max-width: 30%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .rond{
     border-radius: 50%;

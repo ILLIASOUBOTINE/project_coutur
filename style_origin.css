@@ -5,11 +5,7 @@
     box-sizing: border-box;
   }
 
-  :root {
-    --main_color_blue: #085D85;
-    --font_family_main: Laila; 
-    --font_family_seconder: Langar; 
-}
+
 
    /****************** Insertion des polices Langar et Laila Regular *********************/
    @font-face {
@@ -66,6 +62,13 @@
     src: local('fonts/Laila-Bold'), url('fonts/Laila-Bold.woff') format('woff');
     }
 
+
+    :root {
+      --main_color_blue: #085D85;
+      --main_color_yelow:#feb700;
+      --font_family_main: Langar; 
+      --font_family_seconder: Langar; 
+  }
     
   /******************** Backgraund start****************************** */
   
@@ -100,7 +103,7 @@
      flex-shrink: 0;
      margin-bottom: 20px;
   
-    background: #feb700;
+    background:var(--main_color_yelow);
     display: grid;
   
     grid-template-columns: repeat(6, 1fr);
@@ -126,7 +129,7 @@
   
   .title {
     grid-area: title;
-    font-family: Langar;
+    font-family: var(--font_family_main);
     font-style: Regular;
     /* font-size: 36px; */
     font-size: 3rem;
@@ -160,7 +163,7 @@
     min-width: 100px;
     right: 0;
     top: 70px;
-    background: #feb700;
+    background: var(--main_color_yelow);
     z-index: 1;
   }
   
@@ -171,12 +174,12 @@
     padding: 10px 10px;
     /* font-size: 20px; */
     font-size: 1.5rem;
-    color:#085d85;
+    color: var(--main_color_blue);
   }
 
   .dropdown-content > a:hover{
    
-    background:#085d85; ;
+    background:var(--main_color_blue) ;
   }
 
   .nav_menu:hover .dropdown-content  {
@@ -201,7 +204,7 @@
   
   .btn_nav > a  {
     text-decoration: none;
-    font-family: Langar;
+    font-family:var(--font_family_main);
     font-style: normal;
     /* font-size: 20px; */
     font-size: 1.5rem;
@@ -230,7 +233,7 @@
     flex-shrink: 0;
     margin-top: 20px;
     height: 90px;
-    background-color: #feb700;
+    background-color:var(--main_color_yelow);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,7 +262,7 @@
     align-items: center;
     width: 30%;
     height: 40%;
-    font-family: Langar;
+    font-family: var(--font_family_main);
     font-size: 1rem;
   }
   /******************** Footer end****************************** */

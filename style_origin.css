@@ -7,7 +7,7 @@
 
    /****************** Insertion des polices Langar et Laila Regular *********************/
    @font-face {
-    font-family: 'Langar-Regular';
+    font-family: 'Langar';
     src: url('fonts/Langar-Regular.eot');
     src:  local('Langar-Regular'), local('Langar-Regular'),
         url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
@@ -19,7 +19,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Laila-Regular';
+    font-family: 'Laila';
     font-style: normal;
     font-weight: normal;
     src: local('Laila-Regular'), url('fonts/Laila-Regular.woff') format('woff')
@@ -28,7 +28,7 @@
     
 
     @font-face {
-    font-family: 'Laila-Light';
+    font-family: 'Laila';
     font-style: normal;
     font-weight: normal;
     src: local('Laila-Light'), url('fonts/Laila-Light.woff') format('woff')

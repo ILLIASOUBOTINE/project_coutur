@@ -5,6 +5,12 @@
     box-sizing: border-box;
   }
 
+  :root {
+    --main_color_blue: #085D85;
+    --font_family_main: Laila; 
+    --font_family_seconder: Langar; 
+}
+
    /****************** Insertion des polices Langar et Laila Regular *********************/
    @font-face {
     font-family: 'Langar';
@@ -82,6 +88,7 @@
     flex-direction: column;
     height:100vh;
     justify-content: space-between;
+    /* align-items: center; */
   }
 
   /******************** Wraper end****************************** */
@@ -322,7 +329,7 @@
     }
   
     .title {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .nav_main {
       display: none;
@@ -370,7 +377,7 @@
     }
   
     .title {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   
     .nav_main {
@@ -427,7 +434,7 @@
     }
   
     .btn_nav > a {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     /************* Header end**********/
     /************* Footer start**********/
@@ -457,7 +464,7 @@
     }
   
     .btn_nav > a {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
     /************* Header end**********/
     /************* Footer start**********/

@@ -30,8 +30,8 @@ align-items: start;
   display: grid;
   grid-template-columns: 2fr 2.5fr;
   height: 100%; 
-  background-color: #085d85;
-  border: 1px solid #08425d;
+  background-color: var(--main_color_blue);
+  border: 1px solid var(--second_color_darkblue);
   border-radius: 50px;
   align-items: center;
   justify-items: center;
@@ -61,7 +61,7 @@ align-items: start;
   font-style: normal;
   /* font-size: 24px; */
   font-size: 2vw;
-  color: #ffffff;
+  color:var(--second_color_lightyelow);
   text-align: center;
   /* line-height: 37px; */
   line-height: 3.3vw;
@@ -83,8 +83,8 @@ align-items: start;
 .calendrie_home_page {
    width: 70%;
   height: 90%;
- background-color: #085d85;
-  border: #08425d solid 1px;
+ background-color:var(--main_color_blue);
+  border: var(--second_color_darkblue) solid 1px;
   border-radius: 30px;
   text-align: center;
 }
@@ -150,7 +150,7 @@ align-items: start;
   font-weight: bold;
   /* font-size: 30px; */
   font-size: 2.5vw;
-  color: #FFFEFE;
+  color:var(--second_color_lightyelow);
   text-decoration: none;
 
 }
@@ -163,9 +163,9 @@ align-items: start;
   font-weight:200;
   /* font-size: 24px; */
   font-size:  2.2vw;
-  color: #FFFEFE;
+  color:var(--second_color_lightyelow);
   text-decoration: none;
-  border: 2px solid white;
+  border: 2px solid var(--second_color_lightyelow);
   border-radius: 15px;
   width: 80%;
   height: 30%;
@@ -175,17 +175,17 @@ align-items: start;
 }
 
 .event_btn:hover {
-  color: #feb700;
-  border: #feb700 solid;
+  color:var(--main_color_yelow);
+  border:var(--main_color_yelow) solid;
 }
 
 .event_text:hover {
-  color: #feb700;
+  color:var(--main_color_yelow);
 
 }
 
 .calendrie_home_page:hover {
-  background: #feb700 ;
+  background:var(--main_color_yelow) ;
 }
 
 /******************** Main end****************************** */

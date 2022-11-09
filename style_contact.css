@@ -1,11 +1,11 @@
-
-    /* :root {
-        --main_color_blue: #085D85;
-        --main_color_yelow:#feb700;
-        --font_family_main: Langar; 
-        --font_family_seconder: Langar; 
-    } */
-
+:root {
+    --main_color_blue: #085D85;
+    --second_color_darkblue: #08425d;
+    --main_color_yelow:#feb700;
+    --second_color_lightyelow: #fff0bd;
+    --font_family_main: Langar; 
+    --font_family_seconder: Langar; 
+}
 .main_contact {
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
-    color: white;
+    color: var(--second_color_lightyelow);
 
 }
 

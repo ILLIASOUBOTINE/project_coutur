@@ -57,7 +57,7 @@ align-items: start;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Laila;
+  font-family: var( --font_family_seconder);
   font-style: normal;
   /* font-size: 24px; */
   font-size: 2vw;

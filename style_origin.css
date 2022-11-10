@@ -88,6 +88,20 @@
   .logo > img {
     width: 100%;
     height: 100%;
+    animation-name: example2;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+  }
+  .logo>img:hover{
+    animation-name: none;
+}
+
+  @keyframes example2 {
+    0%   {transform: rotate(0deg); width: 100%; height: 100%;}
+    25%  {transform: rotate(90deg); width: 70%; height: 70%;}
+    50%  {transform: rotate(0deg); width: 100%; height: 100%;}
+    75% {transform: rotate(-90deg); width: 70%; height: 70%;}
+    100% {transform: rotate(0deg); width: 100%; height: 100%;}
   }
   
   .title {
@@ -96,7 +110,7 @@
     font-style: Regular;
     /* font-size: 36px; */
     font-size: 3rem;
-    color: (var(--second_color_darkblue));
+    color: var(--second_color_darkblue);
     
   }
   
@@ -132,7 +146,7 @@
   
   .dropdown-content > a{
     text-decoration: none;
-    font-family: 'Langar-Regular';
+    font-family: var(--font_family_main);
     font-style: normal;
     padding: 10px 10px;
     /* font-size: 20px; */

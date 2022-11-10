@@ -13,47 +13,48 @@
 <body>
   <div class="wraper">
     <header>
-      <!-- <div class="fist_part_header"> -->
-      <div class="logo"><img src="imgs/logo.png" alt="" /></div>
-      <div class="title">Evénements</div>
-      <!-- </div> -->
+    <div class="logo"><img src="imgs/logo.png" alt="" /></div>
+    <div class="title">Evénements</div>
 
-      <nav class="nav_main">
-        <div class="btn_nav">
-          <!-- <img src="/imgs/sewing.png" alt=""> -->
-          <a href="#">Accueil</a>
-        </div>
-        <div class="btn_nav">
-          <!-- <img src="/imgs/sewing.png" alt=""> -->
-          <a href="#">Réalisations</a>
-        </div>
-        <div class="btn_nav">
-          <!-- <img src="/imgs/sewing.png" alt=""> -->
+    <nav class="nav_main">
+      <div class="btn_nav">
+        <a href="index.html">Accueil</a>
+      </div>
+      <div class="btn_nav">
+        <a href="realisations.html">Réalisations</a>
+      </div>
+      <div class="btn_nav">
+        <a href="#">Planning</a>
+      </div>
+      <div class="btn_nav">
+        <a href="equipe.html">Equipe</a>
+      </div>
+      <div class="btn_nav">
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <nav class="nav_menu">
+      <div class="btn_nav">
+        <a href="#" class="dropbtn">Menu</a>
+      </div>  
+        <div class="dropdown-content">
+          <a href="index.html">Accueil</a>
+          <a href="realisations.html">Réalisations</a>
           <a href="#">Planning</a>
+          <a href="equipe.html">Equipe</a>
+          <a href="contact.html">Contact</a>
+          
         </div>
-        <div class="btn_nav">
-          <!-- <img src="/imgs/sewing.png" alt=""> -->
-          <a href="#">Equipe</a>
-        </div>
-        <div class="btn_nav">
-          <!-- <img src="/imgs/sewing.png" alt=""> -->
-          <a href="#">Contact</a>
-        </div>
-      </nav>
-      <nav class="nav_menu">
-        <div class="btn_nav">
-          <!-- <img src="/imgs/sewing.png" alt=""> -->
-          <a href="#">Menu</a>
-        </div>
-      </nav>
-    </header>
+      
+    </nav>
+  </header>
     <!-- *******************************FIN DU HEADER*************************** -->
     <main>
-      <h2 class="title_evt top">
-        Evénements à venir
+      <h2 id="event_venir" class="title_evt top">
+        Evénements à venir 
       </h2>
       <!-- *******************************CARTE NOEL *************************** -->
-      <div class="card card_noel">
+      <div id="event_noel" class="card card_noel">
         <div class="bandeau_card_noel"></div>
         <!-- <img class="bandeau_card" src="imgs/guirl_noel.png" alt="guirlande de noël"
           title="Oh, la jolie guirlande !"> -->
@@ -70,11 +71,11 @@
         </div>
       </div>
 
-      <h2 class="title_evt">Evénements passés</h2>
+      <h2 id="event_pass" class="title_evt">Evénements passés</h2>
 
       <!-- ******************************CARTE HALLOWEEN***************************** -->
 
-      <div class="card card_hallwn">
+      <div id="event_hallwn" class="card card_hallwn">
         <div class="bandeau_card_hallw"></div>
         <!-- <img src="imgs/HeaderHalloween1.jpg" alt="bandeau Halloween" title="Hahahaha !!!" class="bandeau_card"> -->
         <h2 class="title_card">Costumes de Halloween</h2>
@@ -92,7 +93,7 @@
 
       <!-- *******************************CARTE PAQUES************************************** -->
 
-      <div class="card card_paq">
+      <div id="event_paq" class="card card_paq">
         <div class="bandeau_card_paq"></div>
         <!-- <img src="imgs/bandeauPaques1.jpg" alt="bandeau Paques" title="Psssssst !!!" class="bandeau_card"> -->
         <h2 class="title_card">Décorations de Pâques</h2>

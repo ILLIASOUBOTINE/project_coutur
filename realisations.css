@@ -62,15 +62,21 @@ a {
 input{
     display: none;
 }
+
+.labels {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .btn_nav2 {
-    position: absolute;
-    top:0;
-    left:0;
-    font-size: 2rem;
+   font-size: 2rem;
     cursor: pointer;
     padding: 10px;
     background-color: aquamarine;
-    margin-right: 10%;
+    
 }
 .tricot, .couture, .crochet{
     display: none;
@@ -81,6 +87,22 @@ input{
 }
 
  input:checked  + .btn_nav{
+    background-color: yellow;
+} 
+
+#menu_toutes:checked ~ .labels >.lab_toutes{
+    background-color: yellow;
+} 
+
+#menu_couture:checked ~ .labels >.lab_couture{
+    background-color: yellow;
+} 
+
+#menu_crochet:checked ~ .labels >.lab_crochet{
+    background-color: yellow;
+} 
+
+#menu_tricot:checked ~ .labels >.lab_tricot{
     background-color: yellow;
 } 
 

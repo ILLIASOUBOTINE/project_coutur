@@ -3,14 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
 .nav_secondaire{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: center; */
+    /* justify-content: space-around; */
     margin: 15%;
-
+  
 }
 a{
     text-decoration: none;
@@ -44,7 +50,7 @@ a{
 }
 /* *****************************************CARTE LAPIN**************************** */
 h2{
-    font-family: 'Langar-Regular';
+    font-family: var(--font_family_main);
     color:var(--second_color_lightyelow);
     justify-content: center;
 }
@@ -52,6 +58,7 @@ h2{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 5em;
 }
 .fond_bleu{
     background-color:var(--main_color_blue);
@@ -59,14 +66,22 @@ h2{
     border-radius: 20px;
 }
 .fond_img{
-    background-image: url(imgs/fond_lapin_crochet.png);
-    width: 75%;
-    margin: 5%;
-    background-size: cover;
-
-
+    max-width: 85%;
 }
+.container{
+    position: relative;
+    display: block;
+}
+
 .description{
-    margin: 30px;
-    text-align: right;
+    /* margin: 30px; */
+    text-align: center;
+    width: 40%;
+    border: 2px var(--second_color_lightyelow) solid;
+    border-radius: 20px;
+    background-color:rgba(255, 240, 189, 0.6);
+    position:absolute;
+    left: 100px;
+
+    max-width: 30%;
 }

@@ -5,75 +5,19 @@
     box-sizing: border-box;
   }
 
-
-
-   /****************** Insertion des polices Langar et Laila Regular *********************/
-   @font-face {
-    font-family: 'Langar';
-    src: url('fonts/Langar-Regular.eot');
-    src:  local('Langar-Regular'), local('Langar-Regular'),
-        url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Langar-Regular.woff2') format('woff2'),
-        url('fonts/Langar-Regular.woff') format('woff'),
-        url('fonts/Langar-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Laila';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Laila-Regular'), url('fonts/Laila-Regular.woff') format('woff')
-    url('fonts/Laila-Regular.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Laila-Light'), url('fonts/Laila-Light.woff') format('woff')
-    url('fonts/Laila-Light.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-Medium'), url('fonts/Laila-Medium.woff') format('woff')
-    url('fonts/Laila-Regular.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-SemiBold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-SemiBold'), url('fonts/Laila-SemiBold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-Bold'), url('fonts/Laila-Bold.woff') format('woff');
-    }
-
-
     :root {
       --main_color_blue: #085D85;
+      --second_color_darkblue: #08425d;
       --main_color_yelow:#feb700;
+      --second_color_lightyelow: #fff0bd;
       --font_family_main: Langar; 
       --font_family_seconder: Langar; 
   }
     
 
-      /****************** Insertion des polices Langar et Laila Regular *********************/
+      /****************** Insertion de main police Langar *********************/
   @font-face {
-    font-family: 'Langar-Regular';
+    font-family: 'Langar';
     src: url('fonts/Langar-Regular.eot');
     src:  local('Langar-Regular'), local('Langar-Regular'),
         url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
@@ -152,7 +96,7 @@
     font-style: Regular;
     /* font-size: 36px; */
     font-size: 3rem;
-    color: #08425d;
+    color: (var(--second_color_darkblue));
     
   }
   
@@ -206,7 +150,7 @@
   }
 
   .nav_menu:hover .btn_nav>a {
-    color: #FFF0BD;
+    color:var(--second_color_lightyelow);
   }
 
   .btn_nav > a:before {
@@ -231,7 +175,7 @@
   }
   
   a:hover {
-    color: #feffff;
+    color:var(--second_color_lightyelow);
   }
 
 

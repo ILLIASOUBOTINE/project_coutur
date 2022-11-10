@@ -13,15 +13,8 @@ main {
     position: relative;
 }
 
-.nav_secondaire {
+.btn_nav2 {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5% 15%;
-    gap: 5em;
-
 }
 
 a {
@@ -29,26 +22,27 @@ a {
     color: black;
 }
 
-.button_secondaire {
+.button_secondaire, .btn_nav2 {
     text-align: center;
     list-style-type: none;
     background-color: var(--main_color_blue);
     border-radius: 10px;
     padding: 8px 20px;
     font-size: calc(10px + 1vw);
+    cursor: pointer;
 }
 
-.button_secondaire:visited {
+/* .button_secondaire:visited {
     background-color: var(--main_color_yelow);
-}
+} */
 
-.button_secondaire:hover {
+.btn_nav2:hover {
     background-color: var(--main_color_yelow);
     color: black;
     transition: all 0.25s ease-in-out;
 }
 
-.button_secondaire:active {
+.btn_nav2:active {
     background-color: var(--main_color_yelow);
     color: var(--second_color_lightyelow);
 }
@@ -57,8 +51,6 @@ a {
     background-color: var(--main_color_yelow);
     color: black;
 }
-
-/* *****************************************CARTES**************************** */
 input{
     display: none;
 }
@@ -71,13 +63,16 @@ input{
     margin-bottom: 20px;
 }
 
-.btn_nav2 {
+/* .btn_nav2 {
    font-size: 2rem;
     cursor: pointer;
     padding: 10px;
     background-color: aquamarine;
     
-}
+} */
+
+/* *****************************************CARTES**************************** */
+
 .tricot, .couture, .crochet{
     display: none;
 }
@@ -87,23 +82,23 @@ input{
 }
 
  input:checked  + .btn_nav{
-    background-color: yellow;
+    background-color:var(--main_color_yelow);
 } 
 
 #menu_toutes:checked ~ .labels >.lab_toutes{
-    background-color: yellow;
+    background-color:var(--main_color_yelow);
 } 
 
 #menu_couture:checked ~ .labels >.lab_couture{
-    background-color: yellow;
+    background-color:var(--main_color_yelow);
 } 
 
 #menu_crochet:checked ~ .labels >.lab_crochet{
-    background-color: yellow;
+    background-color:var(--main_color_yelow);
 } 
 
 #menu_tricot:checked ~ .labels >.lab_tricot{
-    background-color: yellow;
+    background-color:var(--main_color_yelow);
 } 
 
 #menu_couture:checked ~ .couture{

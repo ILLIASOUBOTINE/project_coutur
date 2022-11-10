@@ -466,7 +466,7 @@
     /************* Footer end**********/
   }
   
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1400px) {
     /************* Header start**********/
     header {
       height: 145px;

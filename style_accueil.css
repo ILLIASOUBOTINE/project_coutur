@@ -60,15 +60,20 @@ align-items: start;
   font-family: var( --font_family_seconder);
   font-style: normal;
   /* font-size: 24px; */
-  font-size: 2vw;
+  font-size: 1.5vw;
   color:var(--second_color_lightyelow);
   text-align: center;
   /* line-height: 37px; */
   line-height: 3.3vw;
+  padding: 2em;
 }
 
 .text_home_page > p {
-  margin-top: 8%;
+  margin-top: 7%;
+}
+.first_words{
+  font-size: 3em;
+  font-weight: 600;
 }
 
 .home_page_section2 {
@@ -98,8 +103,9 @@ align-items: start;
 }
 
 .calendrie_home_page img {
-  width: 90%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
 }
 
 .home_page_evenement {
@@ -146,10 +152,10 @@ align-items: start;
 
 .event_text {
   width: 90%;
-  font-family: Langar;
-  font-weight: bold;
+  font-family: var(--font_family_seconder);
+  /* font-weight: bold; */
   /* font-size: 30px; */
-  font-size: 2.5vw;
+  font-size: 2vw;
   color:var(--second_color_lightyelow);
   text-decoration: none;
 
@@ -185,7 +191,9 @@ align-items: start;
 }
 
 .calendrie_home_page:hover {
-  background:var(--main_color_yelow) ;
+  background:var(--second_color_darkblue) ;
+  border: 4px solid var(--main_color_yelow);
+  transition: all 0.3s linear;
 }
 
 /******************** Main end****************************** */

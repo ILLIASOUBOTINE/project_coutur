@@ -13,7 +13,7 @@
 <body>
     <div class="wraper">
         <header>
-            <div class="logo"><img src="imgs/logo.png" alt="" /></div>
+            <div class="logo"><img src="imgs/logo.png" alt="Logo" /></div>
 
             <div class="title">Nos réalisations</div>
 
@@ -43,7 +43,7 @@
         </header>
         <main>
             <!-- ****************************NAV SECONDAIRE****************************************  -->
-            <nav>
+            <!-- <nav>
                 <ul class="nav_secondaire">
                     <a href="realisations.html">
                         <li class="button_secondaire active">Toutes</li>
@@ -58,40 +58,278 @@
                         <li class="button_secondaire">Tricot</li>
                     </a>
                 </ul>
-            </nav>
+            </nav> -->
+            <input type="radio" name="menu" id="menu_toutes" checked>
+            <label class="btn_nav2" for="menu_toutes">Toutes </label>
+            
+            <input type="radio" name="menu" id="menu_couture">
+            <label class="btn_nav2" for="menu_couture">Couture</label>
+            
+           <input type="radio" name="menu" id="menu_crochet">
+            <label class="btn_nav2" for="menu_crochet">Crochet</label>
+            
+            <input type="radio" name="menu" id="menu_tricot">
+            <label class="btn_nav2" for="menu_tricot">Tricot</label>
+
             <!-- ***********************************FIN NAV SECONDAIRE***************************** -->
             <!-- ************************************CARTE LAPIN EN CROCHET************************* -->
-            <div class="card_lapin fond_bleu">
-                <h2 class="titre_card">Le lapin en crochet</h2>
-                <div class="fond_img">
+            <div class="card tricot fond_bleu">
+                <h2 class="titre_card">Le lapin en tricot</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_lapin_crochet.png" alt="lapin tricot">
+                    </div>
                     <div class="description">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
-                        repudiandae adipisci a inventore quaerat! Recusandae officiis, nesciunt saepe deleniti porro
-                        consequatur ratione.
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Tricot</button>
+                        <button class="tag_2">Bébé</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;17</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>2&nbsp;</span>
+                        </div>
                     </div>
                 </div>
 
             </div>
             <!-- ************************************CARTE COSTUMES DE NOEL************************* -->
-            <div class="card_noel fond_bleu">
+            <div class="card couture fond_bleu">
                 <h2 class="titre_card">Costumes de Noël</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_noel.jpg" alt="costumes_de_Noël">
+                    </div>
+                    <div class="description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Couture</button>
+                        <button class="tag_2">Noël</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;88</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>1&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- ************************************CARTE GANTS************************* -->
-            <div class="card_gants fond_bleu">
-                <h2 class="titre_card">Les gants en tricot</h2>
+            <div class="card crochet fond_bleu">
+                <h2 class="titre_card">Les gants</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_gants.png" alt="photo_gants_tricotés">
+                    </div>
+                    <div class="description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Crochet</button>
+                        <button class="tag_2">Femme</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;127</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>23&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- ************************************CARTE ROBE************************* -->
-            <div class="card_robe fond_bleu">
+            <div class="card tricot fond_bleu">
                 <h2 class="titre_card">Robe de printemps</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_tricot.jpg" alt="photo_couture">
+                    </div>
+                    <div class="description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Tricot</button>
+                        <button class="tag_2">Femme</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;54</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>0&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ************************************CARTE CROCHET************************* -->
+            <div class="card crochet fond_bleu">
+                <h2 class="titre_card">Encore du crochet</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_gants.png" alt="photo_gants_tricotés">
+                    </div>
+                    <div class="description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Crochet</button>
+                        <button class="tag_2">Bébé</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;49</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>1&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ************************************CARTE COUTURE************************* -->
+            <div class="card couture fond_bleu">
+                <h2 class="titre_card">Modèle de Couture 1</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_noel.jpg" alt="costumes_de_Noël">
+                    </div>
+                    <div class="description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Couture</button>
+                        <button class="tag_2">Homme</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;99</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>17&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ************************************CARTE TRICOT************************* -->
+            <div class="card tricot fond_bleu">
+                <h2 class="titre_card">Encore du tricot</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_lapin_crochet.png" alt="lapin tricot">
+                    </div>
+                    <div class="description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Tricot</button>
+                        <button class="tag_2">Femme</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;97</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>5&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ************************************CARTE COUTURE************************* -->
+            <div class="card couture fond_bleu">
+                <h2 class="titre_card">Modèle de Couture 2</h2>
+                <div class="container">
+                    <div>
+                        <img class="fond_img" src="imgs/fond_noel.jpg" alt="costumes_de_Noël">
+                    </div>
+                    <div class="description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, eius necessitatibus earum
+                        repudiandae adipisci ratione.
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="tags">
+                        <button class="tag_1">Couture</button>
+                        <button class="tag_2">Homme</button>
+                    </div>
+                    <div class="fb">
+                        <div class="likes">
+                            <img src="https://api.iconify.design/ant-design/like-outlined.svg?color=%23085d85"
+                                alt="icône Like">
+                            <span>&nbsp;99</span>
+                        </div>
+                        <div class="dislikes">
+                            <img src="https://api.iconify.design/ant-design/dislike-outlined.svg?color=%23085d85"
+                                alt="icône Dislike">
+                            <span>17&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
             <div class="icons_footer">
-                <img src="imgs/icons_instagram.png" alt="" />
-                <img src="imgs/icons_whatsapp.png" alt="" />
-                <img src="imgs/icons_facebook.png" alt="" />
+                <img src="imgs/icons_instagram.png" alt="icône Instagram" />
+                <img src="imgs/icons_whatsapp.png" alt="icône Whatsapp" />
+                <img src="imgs/icons_facebook.png" alt="icône Facebook" />
             </div>
-            <p class="text_footer">Conditions generales blabla</p>
+            <p class="text_footer">Conditions générales blabla</p>
 
         </footer>
     </div>

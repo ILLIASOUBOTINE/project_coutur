@@ -9,12 +9,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: var(--font_family_main);
     position: relative;
 }
 
 .btn_nav2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font_family_seconder);
 }
 
 a {
@@ -129,6 +128,7 @@ input{
 
 h2 {
     font-family: var(--font_family_main);
+    font-weight: 100;
     color: var(--second_color_lightyelow);
     text-align: center;
 }
@@ -149,7 +149,7 @@ h2 {
 
 
 .description {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font_family_seconder);
     text-align: center;
     width: 50%;
     border: 2px var(--second_color_lightyelow) solid;
@@ -165,8 +165,8 @@ h2 {
 .card_footer {
     display: flex;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .tag_1, .tag_2 {
@@ -204,8 +204,5 @@ h2 {
     .container{
         display:flex;
     }
-    /* .fond_img{
-        width: 50%;
-    } */
-    
+
 }

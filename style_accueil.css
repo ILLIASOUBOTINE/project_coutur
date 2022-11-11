@@ -65,14 +65,14 @@ align-items: start;
   text-align: center;
   /* line-height: 37px; */
   line-height: 3.3vw;
-  padding: 2em;
+  padding: 1em;
 }
 
 .text_home_page > p {
   margin-top: 7%;
 }
 .first_words{
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
 }
 

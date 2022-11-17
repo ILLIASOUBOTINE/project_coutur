@@ -133,6 +133,7 @@ button {
 @media screen and (max-width:780px) {
     .card{
         margin: 2em;
+        line-height: 1.2em;
     }
     p{
         font-size: 11px;
@@ -145,8 +146,8 @@ button {
         margin: 1em 1.5em 1em 1.5em;
         padding: 5px 10px;
         font-size: .7em;
-        line-height: 1em;
-        width: calc(50% + 1.5em);
+        line-height: 1.5em;
+        width: calc(30% + 1em);
         
     }
 }

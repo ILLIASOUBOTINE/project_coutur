@@ -21,7 +21,8 @@ a {
     color: black;
 }
 
-.button_secondaire, .btn_nav2 {
+.button_secondaire,
+.btn_nav2 {
     text-align: center;
     list-style-type: none;
     background-color: var(--main_color_blue);
@@ -50,7 +51,8 @@ a {
     background-color: var(--main_color_yelow);
     color: black;
 }
-input{
+
+input {
     display: none;
 }
 
@@ -72,44 +74,49 @@ input{
 
 /* *****************************************CARTES**************************** */
 
-.tricot, .couture, .crochet{
+.tricot,
+.couture,
+.crochet {
     display: none;
 }
-#menu_toutes:checked ~ .couture, #menu_toutes:checked ~ .tricot, #menu_toutes:checked ~ .crochet {
+
+#menu_toutes:checked~.couture,
+#menu_toutes:checked~.tricot,
+#menu_toutes:checked~.crochet {
     display: flex;
 
 }
 
- input:checked  + .btn_nav{
-    background-color:var(--main_color_yelow);
-} 
+input:checked+.btn_nav {
+    background-color: var(--main_color_yelow);
+}
 
-#menu_toutes:checked ~ .labels >.lab_toutes{
-    background-color:var(--main_color_yelow);
-} 
+#menu_toutes:checked~.labels>.lab_toutes {
+    background-color: var(--main_color_yelow);
+}
 
-#menu_couture:checked ~ .labels >.lab_couture{
-    background-color:var(--main_color_yelow);
-} 
+#menu_couture:checked~.labels>.lab_couture {
+    background-color: var(--main_color_yelow);
+}
 
-#menu_crochet:checked ~ .labels >.lab_crochet{
-    background-color:var(--main_color_yelow);
-} 
+#menu_crochet:checked~.labels>.lab_crochet {
+    background-color: var(--main_color_yelow);
+}
 
-#menu_tricot:checked ~ .labels >.lab_tricot{
-    background-color:var(--main_color_yelow);
-} 
+#menu_tricot:checked~.labels>.lab_tricot {
+    background-color: var(--main_color_yelow);
+}
 
-#menu_couture:checked ~ .couture{
+#menu_couture:checked~.couture {
     display: flex;
 }
 
 
-#menu_crochet:checked ~ .crochet{
+#menu_crochet:checked~.crochet {
     display: flex;
 }
 
-#menu_tricot:checked ~ .tricot{
+#menu_tricot:checked~.tricot {
     display: flex;
 }
 
@@ -118,6 +125,7 @@ input{
     flex-direction: column;
     text-align: center;
     margin-bottom: 5em;
+    padding: 1em;
 }
 
 .fond_bleu {
@@ -136,7 +144,7 @@ h2 {
 .container {
     position: relative;
     display: block;
-    width: 100%;
+    width: 90%;
 }
 
 .fond_img {
@@ -169,7 +177,8 @@ h2 {
     margin-right: 6%;
 }
 
-.tag_1, .tag_2 {
+.tag_1,
+.tag_2 {
     background-color: var(--second_color_lightyelow);
     color: var(--main_color_blue);
     font-family: var(--font_family_main);
@@ -177,7 +186,7 @@ h2 {
     padding: 5px;
     margin: 20px;
     border-radius: 10px;
-    width: 80px;
+    width: 5em;
 }
 
 .fb {
@@ -191,6 +200,7 @@ h2 {
     margin: 20px;
     border-radius: 10px;
     width: 150px;
+    height: 30px;
 }
 
 .dislikes {
@@ -201,8 +211,59 @@ h2 {
 /************************************************ MEDIA QUERIES*************************************************** */
 
 @media screen and (max-width:760px) {
-    .container{
-        display:flex;
+    .fond_img {
+        display: none;
+    }
+
+    .tricot>.container {
+        display:grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: ". txt";
+        height: 11em;
+        background-image: url(imgs/mini_fond_lapin.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        margin: 1em;
+    }
+    .couture>.container {
+        display:grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: ". txt";
+        height: 11em;
+        background-image: url(imgs/mini_fond_noel.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        margin: 1em;
+    }
+    .crochet>.container {
+        display:grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: ". txt";
+        height: 11em;
+        background-image: url(imgs/mini_fond_gants.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        margin: 1em;
+    }
+    .description {
+        grid-area: txt;
+        position: initial;
+        margin: 2em 0;
+        max-height: 13em;
+        font-size: 11px;
+        line-height: calc(90% + 1em);
+        padding: 1.5em;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .fb, .tag_1, .tag_2{
+        max-width: 6em;
+        max-height: 33px;
+        margin: 0 0.5em 1em 0;
+
     }
 
 }

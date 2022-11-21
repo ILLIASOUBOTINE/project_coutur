@@ -111,7 +111,6 @@
   .title {
     grid-area: title;
     font-family: var(--font_family_main);
-    font-style: Regular;
     /* font-size: 36px; */
     font-size: 3rem;
     color: var(--second_color_darkblue);

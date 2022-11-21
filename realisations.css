@@ -185,7 +185,7 @@ h2 {
     font-weight: 400;
     padding: 5px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 5em;
 }
 
@@ -198,7 +198,7 @@ h2 {
     font-weight: 400;
     padding: 5px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 150px;
     height: 30px;
 }
@@ -250,10 +250,10 @@ h2 {
         position: initial;
         margin: 2em 0;
         max-height: 13em;
-        font-size: 11px;
+        font-size: 0.85em;
         line-height: calc(90% + 1em);
         padding: 1.5em;
-        width: 100%;
+        width: 110%;
         overflow: hidden;
         text-overflow: ellipsis;
 
@@ -264,6 +264,50 @@ h2 {
         max-height: 33px;
         margin: 0 0.5em 1em 0;
 
+    }
+
+}
+/* *********************************************************************************** */
+
+@media screen and (max-width:550px){
+    .description{
+        font-size: 0.75em;
+        padding: 0.5em;
+        width: 100%;
+    }
+    .tricot>.container, .couture>.container, .crochet>.container{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        width: 100%;
+        margin: 0;
+        background-size: auto 75%;
+        background-position: 10% 50%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .description{
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width:440px){
+    .description{
+        font-size: 0.6em;
+        width: 100%;
+        max-height: 120px;
+        margin: auto 0;
+    }
+    .tricot>.container, .couture>.container, .crochet>.container{
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        background-size: auto 65%;
+        background-position: 10% 50%;
+    }
+    .card_footer{
+    margin: 0;
+    }
+    .btn_nav2{
+        padding: 6px 10px;
     }
 
 }

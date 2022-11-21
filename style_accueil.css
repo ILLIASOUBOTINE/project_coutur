@@ -395,7 +395,7 @@ align-items: start;
 
   .text_anonce {
     width: 90%;
-    font-family: Laila;
+    font-family: var(--font_family_seconder);
     font-style: normal;
     font-weight: 400;
     color: #ffffff;
@@ -404,7 +404,7 @@ align-items: start;
 
   .text_anonce >h3 {
     font-size:calc(20px + 1vw) ;
-    font-family: Langar;
+    font-family: var(--font_family_main);
     padding: 5px;
   }
 

@@ -43,7 +43,7 @@ p {
 .bandeau_card_noel {
     width: 90%;
     height: 8vh;
-    border-radius: 10px;
+    border-radius: 20px;
     background-image: url(imgs/guirl_noel.png);
     background-size: 50%;
     background-repeat: repeat-x;
@@ -164,10 +164,10 @@ button {
     }
     button{
         margin: 1em 1.5em 1em 1.5em;
-        padding: 5px 10px;
-        font-size: .7em;
+        padding: 5px;
+        font-size: .6em;
         line-height: 1em;
-        width: calc(50% + 1.5em);
+        width: calc(25% + 1em);
         
     }
     h2{
@@ -176,7 +176,9 @@ button {
     h5{
         font-size: calc(100% - .3rem);
     }
-    button{
-        font-size: .6em;
-    }
+    .bandeau_card_noel, .bandeau_card_hallw, .bandeau_card_paq {
+        
+        
+        border-radius: 25%;
+}
 }

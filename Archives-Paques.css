@@ -68,7 +68,6 @@ main {
     font-size: calc(15px + 1vw);
     grid-area: title1;
     background-color: #085D85;
-    color: white;
     justify-content: center;
     align-items: center;
     height: 40%;
@@ -91,7 +90,7 @@ main {
         " carte1 carte2 ";
     gap: 20px;
     grid-area: s2;
-    color: white;
+    color: var(--second_color_lightyelow);
 }
 
 .title3 {
@@ -100,12 +99,20 @@ main {
     height: 50px;
     width: 100%;
     grid-area: title3;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
     padding: 1%;
+}
+.title1, .title2, .title3, .name{
+    font-family: var(--font_family_main);
+    color: var(--second_color_lightyelow);
+}
+.s1_text1, .s1_text2, .description{
+    font-family: var(--font_family_seconder);
+    color: var(--second_color_lightyelow);
 }
 
 #sec2_carte1 {
@@ -116,7 +123,7 @@ main {
     display: flex;
     flex-direction: column;
     grid-area: carte1;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
     justify-content: space-around;
 }
 
@@ -245,6 +252,14 @@ label {
 
     height: 30px;
     width: 30px;
+}
+.next img:hover{
+    height: 40px;
+    width: 40px;
+}
+.prev img:hover{
+    height: 40px;
+    width: 40px;
 }
 
 .prev {

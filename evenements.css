@@ -96,7 +96,7 @@ h5 {
     font-family: var(--font_family_seconder);
 }
 
-button {
+button, .int_link {
     margin: 40px 60px 20px 60px;
     padding: 5px 10px;
     width: calc(25% + 1.5em);
@@ -106,6 +106,18 @@ button {
     box-shadow: 3px 3px 2px var(--second_color_darkblue);
     font-family: var(--font_family_main);
     color: var(--main_color_blue);
+}
+.int_link:link{
+    text-decoration: none;
+}
+.int_link:hover{
+    color: var(--main_color_blue);
+     background-color: var(--main_color_yelow);
+     border: 1px solid var(--second_color_darkblue);
+}
+.int_link:active{
+    color: var(--second_color_lightyelow);
+    box-flex-group: var(--second_color_darkblue);
 }
 
 .images {

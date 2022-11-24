@@ -189,7 +189,7 @@ main {
 .calendrie_home_page:hover {
   background:var(--second_color_darkblue) ;
   border: 4px solid var(--main_color_yelow);
-  transition: all 0.3s linear;
+  transition: all 0.15s linear;
 }
 
 /******************** Main end****************************** */

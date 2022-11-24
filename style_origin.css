@@ -65,7 +65,8 @@
   
   /******************** Header start****************************** */
   header {
-    /* position: relative; */
+      
+
      height: 150px;
      flex-shrink: 0;
      margin-bottom: 20px;

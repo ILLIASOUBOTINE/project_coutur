@@ -4,8 +4,9 @@ main {
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    
     grid-template-areas:
-        ". nav nav nav ."
+        
         ". title1 title1 title1 ."
         ". s1 s1 s1 ."
         ". s1 s1 s1 ."
@@ -21,11 +22,14 @@ main {
 }
 
 .return {
-    height: calc(10px + 5vw);
+   
     display: flex;
     justify-content: flex-start;
+}
 
-    
+.return_page:hover {
+   
+    transform: rotate(180deg) scale(1.5);
 }
 
 .first_section {
@@ -58,6 +62,7 @@ main {
 }
 
 .title1 {
+    /* align-self: center; */
     border-radius: 20px;
     display: flex;
     font-size: calc(0.5em + 1.5vw);
@@ -67,8 +72,8 @@ main {
     justify-content: center;
     align-items: center;
     height: 40%;
-    margin-top: 5%;
-    padding: 1%;
+    /* margin-top: 5%; */
+    padding: 5%;
 }
 
 .title2 {

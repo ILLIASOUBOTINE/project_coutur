@@ -19,11 +19,14 @@ main {
 }
 
 .return {
-    height: calc(10px + 5vw);
+    
     display: flex;
     justify-content: flex-start;
-    
-    
+}
+
+.return_page:hover {
+   
+    transform: rotate(180deg) scale(1.5);
 }
 
 .first_section {
@@ -71,8 +74,8 @@ main {
     justify-content: center;
     align-items: center;
     height: 40%;
-    margin-top: 5%;
-    padding: 1%;
+    /* margin-top: 5%; */
+    padding: 5%;
 }
 
 .title2 {

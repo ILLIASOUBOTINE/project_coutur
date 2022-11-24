@@ -1,0 +1,184 @@
+/******************** Wraper start****************************** */
+.wraper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/******************** Wraper end****************************** */
+.footer {
+    position: relative;
+    bottom: 0px;
+}
+
+/* *********************************bandeau titre************************************ */
+.title_evt {
+    font-family: var(--font_family_main);
+    font-weight: 400;
+    color: var(--main_color_yelow);
+    background-color: var(--main_color_blue);
+    width: 75%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 3px 3px 2px var(--second_color_darkblue);
+    margin: 0px 12.5% 0px 12.5%;
+
+}
+
+/******************************* position du bandeau titre du haut *********************/
+.top {
+    position: relative;
+    top: 0px;
+}
+
+p {
+    font-family: var(--font_family_seconder);
+    font-size: 14px;
+    margin: 0 4em;
+}
+
+/* ***********************************BANDEAUX DE CARTES************************ */
+.bandeau_card_noel {
+    width: 90%;
+    height: 8vh;
+    border-radius: 20px;
+    background-image: url(imgs/guirl_noel.png);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+
+.bandeau_card_hallw {
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/HeaderHalloween1.jpg);
+    background-size: 80%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+
+.bandeau_card_paq {
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    background-image: url(imgs/bandeauPaques1.jpg);
+    background-size: 40%;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin: auto;
+}
+
+/* ********************************MODELE DE CARTE**************************************/
+.card {
+    background-color: var(--main_color_blue);
+    color: var(--second_color_lightyelow);
+    text-align: center;
+    margin: 40px 12.5% 40px 12.5%;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2em;
+    box-shadow: 3px 3px 2px var(--second_color_darkblue);
+}
+
+.title_card {
+    font-family: var(--font_family_main);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+h5 {
+    font-weight: 800;
+    font-family: var(--font_family_seconder);
+}
+
+button {
+    margin: 40px 60px 20px 60px;
+    padding: 5px 10px;
+    width: calc(25% + 1.5em);
+    border-radius: 20px;
+    background-color: var(--second_color_lightyelow);
+    font-size: .9rem;
+    box-shadow: 3px 3px 2px var(--second_color_darkblue);
+    font-family: var(--font_family_main);
+    color: var(--main_color_blue);
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.illustr {
+    max-width: 30%;
+    border-radius: 20px;
+}
+
+.rond {
+    border-radius: 50%;
+    width: 15%;
+    align-self: center;
+}
+.boutons{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* --------------------------------MEDIA QUERIES-------------------------------------- */
+@media screen and (max-width:780px) {
+    .card{
+        margin: 2em;
+        line-height: 1.2em;
+    }
+    p{
+        font-size: 11px;
+        margin: 0 1em;
+    }
+    .rond {
+        display: none;
+    }
+    button{
+        margin: 1em 1.5em 1em 1.5em;
+        padding: 5px 10px;
+        font-size: .7em;
+        line-height: 1.5em;
+        width: calc(30% + 1em);
+        
+    }
+}
+@media screen and (max-width:450px) {
+    .card{
+        margin: 1em;
+    }
+    p{
+        font-size: 11px;
+        margin: 0 1em;
+    }
+    .rond {
+        display: none;
+    }
+    button{
+        margin: 1em 1.5em 1em 1.5em;
+        padding: 5px;
+        font-size: .6em;
+        line-height: 1em;
+        width: calc(25% + 1em);
+        
+    }
+    h2{
+        font-size: calc(100%);
+    }
+    h5{
+        font-size: calc(100% - .3rem);
+    }
+    .bandeau_card_noel, .bandeau_card_hallw, .bandeau_card_paq {
+        
+        
+        border-radius: 25%;
+}
+}

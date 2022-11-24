@@ -1,0 +1,139 @@
+/* :root {
+    --main_color_blue: #085D85;
+    --second_color_darkblue: #08425d;
+    --main_color_yelow:#feb700;
+    --second_color_lightyelow: #fff0bd;
+    --font_family_main: Langar; 
+    --font_family_seconder: Langar; 
+} */
+.main_contact {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    width: 90%;
+    flex-shrink: 0;
+    background-color: var(--main_color_blue);
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    color: var(--second_color_lightyelow);
+
+}
+
+.main_contact h2 {
+    font-size: calc(14px + 1vw);
+    font-weight: 400;
+    font-family: var(--font_family_main);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.main_contact p {
+    font-size: calc(6.5px + 1vw);
+    line-height: calc(12px + 1.5vw);
+    font-weight: 100;
+    font-style: normal;
+    font-family: var(--font_family_seconder);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.section1_contact {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-shrink: 1; */
+}
+
+.section2_contact {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-shrink: 1; */
+}
+
+/* .article4_contact {
+    flex-direction: column;
+
+} */
+
+.article4_contact > a {
+    display: block;
+    width: 40%;
+    border-radius: 20px;
+    text-decoration: none;
+    background:rgba(220, 176, 63, 0.95) ;
+    color: #000000;
+    padding: 5px 10px;
+    font-family: var(--font_family_main);
+    font-size: calc(10px + 1vw);
+    text-align: center;
+    margin: 10px auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.article5_contact {
+    width: 70%;
+    /* height: 70%; */
+}
+
+.article6_contact {
+    display: flex;
+    
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+.article6_contact > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.carte_ici {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    color:var(--main_color_blue);
+    
+}
+
+@media screen and (max-width: 760px) {
+    .main_contact {
+        flex-direction: column;
+        justify-content:flex-start;
+        border-radius: 20px;
+    }
+
+    .section1_contact {
+        height: 60%;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .section2_contact {
+        flex-shrink: 0;
+        height: 40%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .article6_contact {
+        margin: auto 0;
+        width: 90%;
+        height: 70%;
+      
+    }
+
+    .main_contact p {
+        font-size: calc(8px + 1vw);
+    }
+}

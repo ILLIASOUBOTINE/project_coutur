@@ -1,0 +1,469 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+    :root {
+      --main_color_blue: #085D85;
+      --second_color_darkblue: #08425d;
+      --main_color_yelow:#feb700;
+      --second_color_lightyelow: #fff0bd;
+      --font_family_main: Langar; 
+      --font_family_seconder: Confortaa; 
+  }
+    
+
+      /****************** Insertion de main police Langar *********************/
+  @font-face {
+    font-family: 'Langar';
+    src: url('fonts/Langar-Regular.eot');
+    src:  local('Langar-Regular'), local('Langar-Regular'),
+        url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Langar-Regular.woff2') format('woff2'),
+        url('fonts/Langar-Regular.woff') format('woff'),
+        url('fonts/Langar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'Confortaa';
+  src: url(fonts/Comfortaa-Regular.ttf);
+}
+
+      /************************* Background start************************************ */
+
+   html{
+    background-image: url(imgs/fond_couture.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    
+      
+  }
+  
+  /******************** Background end****************************** */
+  
+  /******************** Wraper start****************************** */
+  .wraper {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  /******************** Wraper end****************************** */
+  
+  /******************** Header start****************************** */
+  header {
+    /* position: relative; */
+     height: 150px;
+     flex-shrink: 0;
+     margin-bottom: 20px;
+  
+    background:var(--main_color_yelow);
+    display: grid;
+  
+    grid-template-columns: repeat(6, 1fr);
+  
+    grid-template-areas: "logo title title nav nav nav";
+    align-items: center;
+    justify-items: center;
+  
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    
+   
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo > img {
+    width: 90%;
+    height: 90%;
+    animation-name: example2;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+  }
+  .logo>img:hover{
+    animation-name: none;
+}
+
+  @keyframes example2 {
+    0%   {transform: rotate(0deg); width: 90%; height: 90%;}
+    25%  {transform: rotate(90deg); width: 70%; height: 70%;}
+    50%  {transform: rotate(0deg); width: 90%; height: 900%;}
+    75% {transform: rotate(-90deg); width: 70%; height: 70%;}
+    100% {transform: rotate(0deg); width: 90%; height: 90%;}
+  }
+  
+  .title {
+    grid-area: title;
+    font-family: var(--font_family_main);
+    /* font-size: 36px; */
+    font-size: 3rem;
+    color: var(--second_color_darkblue);
+    
+  }
+  
+  .nav_main {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6%;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .nav_menu {
+    display: none;
+    grid-area: navm;
+    justify-self:end;
+    padding-right: 20px;
+    position: relative;
+
+  }
+
+  .dropdown-content {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    min-width: 100px;
+    right: 0;
+    top: 70px;
+    background: var(--main_color_yelow);
+    z-index: 1;
+  }
+  
+  .dropdown-content > a{
+    text-decoration: none;
+    font-family: var(--font_family_main);
+    font-style: normal;
+    padding: 10px 10px;
+    /* font-size: 20px; */
+    font-size: 1.5rem;
+    color: var(--main_color_blue);
+  }
+
+  .dropdown-content > a:hover{
+   
+    background:var(--main_color_blue) ;
+  }
+
+  .nav_menu:hover .dropdown-content  {
+    display: flex;
+  }
+
+  .nav_menu:hover .btn_nav>a {
+    color:var(--second_color_lightyelow);
+  }
+
+  .btn_nav > a:before {
+    content: "";
+    display: block;
+    background: url(imgs/sewing.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+ 
+  
+  .btn_nav > a  {
+    text-decoration: none;
+    font-family:var(--font_family_main);
+    font-style: normal;
+    /* font-size: 20px; */
+    font-size: 1.5rem;
+    color: var(--second_color_darkblue);
+  }
+  
+  a:hover {
+    color:var(--second_color_lightyelow);
+    transition: all 0.3s linear;
+  }
+
+
+  
+  /******************** Header end****************************** */
+  
+  /******************** Main start****************************** */
+
+  
+  
+  
+ 
+  /******************** Main end****************************** */
+  
+  /******************** Footer start****************************** */
+  
+  footer {
+    flex-shrink: 0;
+    margin-top: 20px;
+    height: 90px;
+    background-color:var(--main_color_yelow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons_footer {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .icons_footer > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .text_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 40%;
+    font-family: var(--font_family_main);
+    font-size: 1rem;
+  }
+  /******************** Footer end****************************** */
+  
+  /******************** @ Media screen  start****************************** */
+  @media screen and (max-width: 325px) {
+    /************* Header start**********/
+    header {
+      height: 80px;
+  
+      grid-template-areas: "logo logo . . navm navm";
+    }
+  
+    /* .logo {
+      width: 73px;
+      height: 55px;
+    } */
+  
+    .nav_main,
+    .title {
+      display: none;
+    }
+  
+    .nav_menu {
+      display: flex;
+    }
+  
+    .btn_nav > a:before {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .btn_nav > a {
+      font-size: 1rem;
+    }
+    .dropdown-content {
+       top: 58px; 
+     }
+    /************* Header end**********/
+    /************* Footer start**********/
+    footer {
+      height: 50px;
+    }
+  
+    .icons_footer {
+      width: 60%;
+    }
+    .text_footer {
+      font-size: 0.7rem;
+      width: 60%;
+    }
+
+  
+    /************* Footer end**********/
+  }
+  @media screen and (min-width: 325px) and (max-width: 480px) {
+    /************* Header start**********/
+    header {
+      height: 80px;
+      grid-template-columns: 1.5fr repeat(5, 1fr);
+      grid-template-areas: "logo title title title navm navm";
+    }
+  
+    /* .logo {
+      width: 73px;
+      height: 55px;
+    } */
+  
+    .title {
+      font-size: 1.1rem;
+    }
+    .nav_main {
+      display: none;
+    }
+  
+    .nav_menu {
+      display: flex;
+    }
+  
+    .btn_nav > a:before {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .btn_nav > a {
+      font-size: 1rem;
+    }
+
+    .dropdown-content {
+     top: 58px;
+    }
+    /************* Header end**********/
+    /************* Footer start**********/
+    footer {
+      height: 50px;
+  }
+  
+  .icons_footer {
+      width: 60%;
+      
+  }
+  .text_footer {
+   font-size: 0.7rem;
+   width: 60%;
+  }
+    /************* Footer end**********/
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 760px) {
+    /************* Header start**********/
+    header {
+      height: 100px;
+     
+      grid-template-areas: "logo title title title navm navm";
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .nav_main {
+      display: none;
+    }
+  
+    .nav_menu {
+      display: flex;
+    }
+  
+    .btn_nav > a:before {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .btn_nav > a {
+      font-size: 1.2rem;
+    }
+    /************* Header end**********/
+    /************* Footer start**********/
+  
+    footer {
+      height: 60px;
+  }
+  
+  .icons_footer {
+      width: 40%;
+      
+  }
+  .text_footer {
+   font-size: 0.8rem;
+   width: 40%;
+  }
+    /************* Footer end**********/
+  }
+  
+  @media screen and (min-width: 760px) and (max-width: 1024px) {
+    /************* Header start**********/
+    header {
+      height: 120px;
+  
+      grid-template-areas: "logo . nav nav nav nav";
+    }
+    .nav_main {
+      gap: 5%;
+    }
+  
+    .title {
+      display: none;
+    }
+    .btn_nav > a:before {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .btn_nav > a {
+      font-size: 1.2rem;
+    }
+    /************* Header end**********/
+    /************* Footer start**********/
+    footer {
+      height: 70px;
+  }
+    /************* Footer end**********/
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1400px) {
+    /************* Header start**********/
+    header {
+      height: 140px;
+  
+      grid-template-areas: "logo title title nav nav nav";
+    }
+    .nav_main {
+      gap: 5%;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+    .btn_nav > a:before {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .btn_nav > a {
+      font-size: 1.3rem;
+    }
+    /************* Header end**********/
+    /************* Footer start**********/
+    /************* Footer end**********/
+  }
+  @media screen and (min-width: 1280px) {
+    /************* Header start**********/
+  
+    /************* Header end**********/
+  
+    /************* Footer start**********/
+    /************* Footer end**********/
+  }
+  
+  /******************** @ Media screen  end****************************** */
+  

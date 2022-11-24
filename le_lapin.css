@@ -1,4 +1,5 @@
 main {
+   
     width: 90vw;
     display: grid;
     margin: auto;
@@ -9,6 +10,22 @@ main {
         ". s1 s1 s1 ."
         ". s1 s1 s1 ."
         ". s2 s2 s2 ."
+}
+
+.return_page {
+  
+    width: calc(20px + 10vw);
+    height: calc(10px + 5vw);
+    transform: rotate(180deg);
+    
+}
+
+.return {
+    height: calc(10px + 5vw);
+    display: flex;
+    justify-content: flex-start;
+
+    
 }
 
 .first_section {

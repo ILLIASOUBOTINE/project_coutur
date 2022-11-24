@@ -17,28 +17,40 @@ main {
     border-radius: 20px;
     color: white;
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #085D85;
     grid-area: s1;
     padding: 1vh;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* grid-template-areas:
-        "title2 title2 title2 title2"
-        "img1 img2 img3 s1_text1"
-        "img4 img5 img5 s1_text2"; */
+
+}
+
+.first_sec_1,
+.first_sec_2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.first_sec_1 img,
+.first_sec_2 img {
+    margin: 20px;
 }
 
 .first_section p {
+    /* width: 20%; */
     padding: 10px;
-   
+
 }
 
 .title1 {
     border-radius: 20px;
     display: flex;
-    font-size: calc(0.5em + 2vw);
+    font-size: calc(15px + 1vw);
     grid-area: title1;
     background-color: #085D85;
     color: white;
@@ -50,36 +62,10 @@ main {
 }
 
 .title2 {
-    grid-area: title2;
+    font-size: calc(15px + 1vw);
 }
 
-.img1 {
-    grid-area: img1;
-    
-}
 
-.img2 {
-    grid-area: img2;
-
-}
-
-.img3 {
-    grid-area: img3;
-
-}
-
-.img4 {
-    grid-area: img4;
-
-}
-
-.img5 {
-    grid-area: img5;
-}
-
-.s2_text {
-    grid-area: s2_text;
-}
 
 .second_section {
     border-radius: 20px;
@@ -114,9 +100,9 @@ main {
     padding: 5%;
     display: flex;
     flex-direction: column;
-    width: auto;
     grid-area: carte1;
     background-color: #085D85;
+    justify-content: space-around;
 }
 
 #sec2_carte2 {
@@ -129,17 +115,20 @@ main {
     width: auto;
     grid-area: carte2;
     background-color: #085D85;
+    justify-content: space-around;
 }
 
 .mv_carte {
+    flex-shrink: 0;
     position: relative;
-    height: 50%;
+    height: 80%;
     width: 100%;
 }
 
 .mv_img_carte {
     height: 100%;
     width: 100%;
+
 }
 
 .mv_profil {
@@ -151,11 +140,11 @@ main {
     bottom: -10px;
 }
 
-.sec2_carte div {
+/* .sec2_carte div {
     display: flex;
     flex-direction: column;
     height: 100%;
-}
+} */
 
 .name {
     margin-left: 25%;
@@ -375,6 +364,10 @@ label {
 
     }
 
+    .title1 {
+        font-size: calc(10px + 1vw);
+    }
+
     main {
         grid-template-columns: 1fr;
         /* justify-content:  center; */
@@ -422,5 +415,11 @@ label {
     #sec2_prof1,
     #sec2_prof2 {
         display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .mv_carte {
+        height: 65%;
     }
 }

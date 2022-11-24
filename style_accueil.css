@@ -333,7 +333,7 @@ main {
 
   /************* Main start**********/
   main {
-    height: 90%;
+    /* height: 90%; */
     grid-template-columns:  1fr ;
     grid-template-rows:  3fr 1fr; 
     gap: 20px;
@@ -391,8 +391,8 @@ main {
   
 /************* Main start**********/
   main {
-    height: 90%;
-    /* height: 640px; */
+    /* height: 90%; */
+    height: 640px;
     grid-template-columns: 3fr 1fr;
   }
 
@@ -428,9 +428,9 @@ main {
 }
 
 @media screen and (min-width: 1024px)  {
-  main {
+  /* main {
     height: 90%;
-  }
+  } */
 }
 @media screen and (min-width: 1280px) {
   

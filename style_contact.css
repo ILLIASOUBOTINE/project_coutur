@@ -1,16 +1,9 @@
-/* :root {
-    --main_color_blue: #085D85;
-    --second_color_darkblue: #08425d;
-    --main_color_yelow:#feb700;
-    --second_color_lightyelow: #fff0bd;
-    --font_family_main: Langar; 
-    --font_family_seconder: Langar; 
-} */
+
 .main_contact {
     display: flex;
     justify-content: space-between;
-    height: 80%;
-    width: 90%;
+     /* height: 80%; */
+    width: 90%; 
     flex-shrink: 0;
     background-color: var(--main_color_blue);
     border-radius: 50px;

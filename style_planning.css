@@ -77,6 +77,7 @@ td {
 }
 
 .form legend {
+    font-family: var(--font_family_main);
     font-size: calc(15px + 1vw);
     margin-bottom: 20px;
     padding: 3%;
@@ -96,8 +97,8 @@ td {
     width: 100px;
     border: 1px solid #08425D;
     border-radius: 20px;
-    color: black;
-    background-color: #FFF0BD;
+    color: var(--main_color_blue);
+    background-color: var(--second_color_lightyelow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,16 +118,21 @@ input {
     width: 100%;
     grid-area: ar1;
 }
+.aside_title{
+    font-family: var(--font_family_main);
+    color: white;
+    font-weight: 100;
+}
 
 .ar1 {
-    background-color: #085D85;
+    background-color:var(--main_color_blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 50%;
     width: 100%;
-    color: white;
+    color: var(--second_color_lightyelow);
     border: 1px solid black;
     border-radius: 15px;
 }

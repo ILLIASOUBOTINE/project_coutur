@@ -282,6 +282,11 @@
     .btn_nav > a {
       font-size: 1rem;
     }
+
+    main:hover .dropdown-content  {
+      display: none;
+    }
+
     .dropdown-content {
        top: 58px; 
      }
@@ -335,6 +340,10 @@
       font-size: 1rem;
     }
 
+    main:hover .dropdown-content  {
+      display: none;
+    }
+
     .dropdown-content {
      top: 58px;
     }
@@ -373,6 +382,10 @@
   
     .nav_menu {
       display: flex;
+    }
+
+    main:hover .dropdown-content  {
+      display: none;
     }
   
     .btn_nav > a:before {

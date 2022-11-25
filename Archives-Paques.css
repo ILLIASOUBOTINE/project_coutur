@@ -68,7 +68,7 @@ main {
 .title1 {
     border-radius: 20px;
     display: flex;
-    font-size: calc(15px + 1vw);
+    font-size: calc(13px + 0.8vw);
     grid-area: title1;
     background-color: #085D85;
     justify-content: center;

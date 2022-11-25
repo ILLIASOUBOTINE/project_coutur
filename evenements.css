@@ -102,7 +102,7 @@ button, .int_link {
     width: calc(25% + 1.5em);
     border-radius: 20px;
     background-color: var(--second_color_lightyelow);
-    font-size: .9rem;
+    font-size: 14px;
     box-shadow: 3px 3px 2px var(--second_color_darkblue);
     font-family: var(--font_family_main);
     color: var(--main_color_blue);
@@ -158,12 +158,23 @@ button, .int_link {
         display: none;
     }
     button{
-        margin: 1em 1.5em 1em 1.5em;
+        margin: 2.5em 1.5em 2.5em 1.5em;
         padding: 5px 10px;
         font-size: .7em;
         line-height: 1.5em;
-        width: calc(30% + 1em);
+        width: 30%;
         
+    }
+    .boutons{
+        align-items: center;
+    }
+    .uniq_btn, .int_link{
+        font-size: 0.6em;
+        height: 2.5em;
+        margin: 1em 0.5em;
+        width: 30%;
+        padding: 0 5%;
+        align-items: center;
     }
 }
 @media screen and (max-width:450px) {
@@ -182,8 +193,15 @@ button, .int_link {
         padding: 5px;
         font-size: .6em;
         line-height: 1em;
-        width: calc(25% + 1em);
-        
+        width: calc(25% + 1em); 
+    }
+    .uniq_btn, .int_link{
+        font-size: 0.6em;
+        height: 2.5em;
+        margin: 1em 0.5em;
+        width: 50%;
+        padding: 2% 5%;
+        align-items: center;
     }
     h2{
         font-size: calc(100%);
@@ -192,7 +210,6 @@ button, .int_link {
         font-size: calc(100% - .3rem);
     }
     .bandeau_card_noel, .bandeau_card_hallw, .bandeau_card_paq {
-        
         
         border-radius: 25%;
 }

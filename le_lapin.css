@@ -55,6 +55,7 @@ main {
 }
 .title1, .title2, .title3, .name{
     font-family: var(--font_family_main);
+    font-weight: 100;
     color: var(--second_color_lightyelow);
 }
 .s2_text, .description{

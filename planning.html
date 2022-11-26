@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning et Inscription</title>
+    <link rel="stylesheet" href="style_origin.css">
+    <link rel="stylesheet" href="style_planning.css">
+
+</head>
+
+<body>
+    <div class="wraper">
+        <header>
+            <div class="logo"><a href="index.html"><img src="imgs/logo.png" alt="Logo de Monsieur Couturier" /></a></div>
+
+            <div class="title">Planning</div>
+
+            <nav class="nav_main">
+                <div class="btn_nav">
+                    <a href="index.html">Accueil</a>
+                </div>
+                <div class="btn_nav">
+                    <a href="realisations.html">Réalisations</a>
+                </div>
+                <div class="btn_nav">
+                    <a href="planning.html">Planning</a>
+                </div>
+                <div class="btn_nav">
+                    <a href="equipe.html">L'équipe</a>
+                </div>
+                <div class="btn_nav">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+            <nav class="nav_menu">
+                <div class="btn_nav">
+                    <a href="#" class="dropbtn">Menu</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="index.html">Accueil</a>
+                    <a href="realisations.html">Réalisations</a>
+                    <a href="planning.html">Planning</a>
+                    <a href="equipe.html">L'équipe</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-------------------------Table start---------------------------------->
+        <main>
+            <div class="tb">
+                <table>
+                    <tr class="first_row">
+                        <td></td>
+                        <td class="jour_semaine">Lundi</td>
+                        <td class="jour_semaine">Mardi</td>
+                        <td class="jour_semaine" colspan="2">Mercredi</td>
+                        <td class="jour_semaine">Jeudi</td>
+                        <td class="jour_semaine" colspan="2">Vendredi</td>
+                    </tr>
+                    <!-- 2 -->
+                    <tr>
+                        <td rowspan="2">14.00</td>
+                        <td rowspan="7" class="tb_bcg_couture">Couture</td>
+                        <td></td>
+                        <td rowspan="9" class="tb_bcg_tricot">Tricot et <br> Crochet</td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="9" class="tb_bcg_tricot">Tricot et <br> Crochet</td>
+                        <td></td>
+                    </tr>
+                    <!-- 3 -->
+                    <tr>
+                        <td rowspan="4" class="tb_bcg_enfant">Atelier enfant</td>
+                        <td rowspan="8" class="tb_bcg_couture">Couture</td>
+                        <td></td>
+                        <td rowspan="4" class="tb_bcg_enfant">Atelier enfant</td>
+                    </tr>
+                    <!-- 4 -->
+                    <tr>
+                        <td rowspan="2">15.00</td>
+                        <td></td>
+                    </tr>
+                    <!-- 5 -->
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <!-- 6 -->
+                    <tr>
+                        <td rowspan="2">16.00</td>
+                        <td></td>
+                    </tr>
+                    <!-- 7 -->
+
+                    <tr>
+                        <td rowspan="4" class="tb_bcg_couture">Couture</td>
+                        <td></td>
+                        <td rowspan="4" class="tb_bcg_couture">Couture</td>
+                    </tr>
+                    <!-- 8 -->
+                    <tr>
+                        <td rowspan="2">17.00</td>
+                        <td></td>
+                    </tr>
+                    <!-- 9 -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 10 -->
+                    <tr>
+                        <td>18.00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- 11 -->
+                    <tr>
+                        <td></td>
+                        <td>Salle 1</td>
+                        <td>Salle 2</td>
+                        <td>Salle 1</td>
+                        <td>Salle 2</td>
+                        <td></td>
+                        <td>Salle 1</td>
+                        <td>Salle 2</td>
+                    </tr>
+                </table>
+            </div>
+            <!----------------------------Table End------------------------------------------>
+
+            <div class="form" id="form">
+                <form action="#">
+                    <h2 class="aside_title">Formulaire d'inscription</h2>
+
+                    <div class="form_ln" ><label for="nom">Nom : </label><input name="nom" id="nom" type="text">
+                    </div>
+                    <br>
+
+                    <div class="form_ln"><label for="prenom">Prénom : </label><input name="prenom" id="prenom" type="text">
+                    </div>
+                    <br>
+
+                    <div class="form_ln"><Label for="email">E-mail : </Label><input name="email" id="email" type="email">
+                    </div>
+                    <br>
+
+                    <div class="form_ln"><label for="tel">Téléphone : </label> <input name="tel" id="tel" type="tel">
+                    </div>
+                    <br>
+
+                    <input class="form_btn" type="submit" value="Inscription">
+                </form>
+
+            </div>
+            <div class="aside_right">
+
+                <div class="ar1">
+                    <h2 class="aside_title">Nos prochains événements</h2>
+                   
+                    <a href="evenements.html#event_noel" class="event_next">Du 5 au 23 decembre: Créations de Noël</a>
+                </div>
+                <div class="ar2">
+                    <h2 class="aside_title">Nos événements passés</h2>
+                    <a href="evenements.html#event_hallwn" class="event_last">Costumes d'Halloween</a>
+                </div>
+            </div>
+            <!------------------Version mobile-------------------------------------->
+            
+
+            <div class="v_mobile">
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <h1></h1>
+                </div>
+                <div class="vm_jour">
+                    <h2>Lundi</h2>
+                    <button>14.00-17.30 <br> Couture</button>
+                </div>
+                <div class="vm_jour">
+                    <h2>Mardi</h2>
+                    <button>14.30-16.30 <br> Atelier enfant</button>
+                    <button>16.30-18.00 <br> Couture</button>
+                </div>
+                <div class="vm_jour">
+                    <h2>Mercredi</h2>
+                    <button>14.00-18.00 <br> Tricot et Crochet</button>
+                    <button>14.30-18.00 <br> Couture</button>
+                </div>
+                <div class="vm_jour">
+                    <h2>Vendredi</h2>
+                    <button>14.00-18.00 <br> Tricot et Crochet</button>
+                    <button>14.30-16.30 <br> Atelier enfant</button>
+                    <button>16.30-18.00 <br> Couture</button>
+                </div>
+                <div>
+                    <form action="#"></form>
+                </div>
+            </div>
+            <div class="vm_aside_top">
+                <div class="vm_last_event">
+                    <p>Evénements à venir</p><a href="evenements.html#event_noel"  class="int_link_mob">Noël</a>
+                </div>
+                <div class="vm_next_event">
+                    <p>Evénements passés</p><a href="evenements.html#event_hallwn"  class="int_link_mob">Halloween</a>
+                </div>
+
+            </div>
+
+
+            <!-- <div class="vm_ev_future"><p>Evenements a venir</p><button>Noel</button></div>
+            <div class="vm_ev_past"><p>Evenements passes</p><button>Halloween</button></div> -->
+
+        </main>
+
+        <footer>
+            <div class="icons_footer">
+                <img src="imgs/icons_instagram.png" alt="icône Instagram" />
+                <img src="imgs/icons_whatsapp.png" alt="icône Whatsapp" />
+                <img src="imgs/icons_facebook.png" alt="icône Facebook" />
+            </div>
+            <p class="text_footer">Conditions générales blablah</p>
+        </footer>
+
+
+
+    </div>
+
+
+    
+
+
+</body>
+
+</html>

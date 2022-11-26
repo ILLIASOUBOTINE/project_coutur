@@ -5,10 +5,18 @@
     box-sizing: border-box;
   }
 
+    :root {
+      --main_color_blue: #085D85;
+      --second_color_darkblue: #08425d;
+      --main_color_yelow:#feb700;
+      --second_color_lightyelow: #fff0bd;
+      --font_family_main: Langar; 
+      --font_family_seconder: Confortaa; 
+  }
+    
 
-
-   /****************** Insertion des polices Langar et Laila Regular *********************/
-   @font-face {
+      /****************** Insertion de main police Langar *********************/
+  @font-face {
     font-family: 'Langar';
     src: url('fonts/Langar-Regular.eot');
     src:  local('Langar-Regular'), local('Langar-Regular'),
@@ -21,68 +29,8 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Laila';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Laila-Regular'), url('fonts/Laila-Regular.woff') format('woff')
-    url('fonts/Laila-Regular.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Laila-Light'), url('fonts/Laila-Light.woff') format('woff')
-    url('fonts/Laila-Light.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-Medium'), url('fonts/Laila-Medium.woff') format('woff')
-    url('fonts/Laila-Regular.ttf') format('truetype');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-SemiBold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-SemiBold'), url('fonts/Laila-SemiBold.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Laila-Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('fonts/Laila-Bold'), url('fonts/Laila-Bold.woff') format('woff');
-    }
-
-
-    :root {
-      --main_color_blue: #085D85;
-      --main_color_yelow:#feb700;
-      --font_family_main: Langar; 
-      --font_family_seconder: Langar; 
-  }
-    
-
-      /****************** Insertion des polices Langar et Laila Regular *********************/
-  @font-face {
-    font-family: 'Langar-Regular';
-    src: url('fonts/Langar-Regular.eot');
-    src:  local('Langar-Regular'), local('Langar-Regular'),
-        url('fonts/Langar-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Langar-Regular.woff2') format('woff2'),
-        url('fonts/Langar-Regular.woff') format('woff'),
-        url('fonts/Langar-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Confortaa';
+  src: url(fonts/Comfortaa-Regular.ttf);
 }
 
       /************************* Background start************************************ */
@@ -117,7 +65,8 @@
   
   /******************** Header start****************************** */
   header {
-    /* position: relative; */
+      
+
      height: 150px;
      flex-shrink: 0;
      margin-bottom: 20px;
@@ -135,24 +84,39 @@
   }
   
   .logo {
+    
+   
     grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .logo > img {
-    width: 100%;
-    height: 100%;
+  .logo  img {
+    width: 90%;
+    height: 90%;
+    animation-name: example2;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+  }
+  .logo img:hover{
+    animation-name: none;
+}
+
+  @keyframes example2 {
+    0%   {transform: rotate(0deg); width: 90%; height: 90%;}
+    25%  {transform: rotate(90deg); width: 70%; height: 70%;}
+    50%  {transform: rotate(0deg); width: 90%; height: 900%;}
+    75% {transform: rotate(-90deg); width: 70%; height: 70%;}
+    100% {transform: rotate(0deg); width: 90%; height: 90%;}
   }
   
   .title {
     grid-area: title;
     font-family: var(--font_family_main);
-    font-style: Regular;
     /* font-size: 36px; */
     font-size: 3rem;
-    color: #08425d;
+    color: var(--second_color_darkblue);
     
   }
   
@@ -160,7 +124,7 @@
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 8%;
+    gap: 6%;
     align-items: center;
     justify-items: center;
   }
@@ -183,12 +147,12 @@
     right: 0;
     top: 70px;
     background: var(--main_color_yelow);
-    z-index: 1;
+    z-index: 10;
   }
   
   .dropdown-content > a{
     text-decoration: none;
-    font-family: 'Langar-Regular';
+    font-family: var(--font_family_main);
     font-style: normal;
     padding: 10px 10px;
     /* font-size: 20px; */
@@ -206,7 +170,7 @@
   }
 
   .nav_menu:hover .btn_nav>a {
-    color: #FFF0BD;
+    color:var(--second_color_lightyelow);
   }
 
   .btn_nav > a:before {
@@ -227,11 +191,12 @@
     font-style: normal;
     /* font-size: 20px; */
     font-size: 1.5rem;
-    color: black;
+    color: var(--second_color_darkblue);
   }
   
   a:hover {
-    color: #feffff;
+    color:var(--second_color_lightyelow);
+    transition: all 0.3s linear;
   }
 
 
@@ -287,18 +252,18 @@
   /******************** Footer end****************************** */
   
   /******************** @ Media screen  start****************************** */
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 325px) {
     /************* Header start**********/
     header {
       height: 80px;
   
-      grid-template-areas: "logo title title title navm navm";
+      grid-template-areas: "logo logo . . navm navm";
     }
   
-    .logo {
+    /* .logo {
       width: 73px;
       height: 55px;
-    }
+    } */
   
     .nav_main,
     .title {
@@ -317,6 +282,11 @@
     .btn_nav > a {
       font-size: 1rem;
     }
+
+    main:hover .dropdown-content  {
+      display: none;
+    }
+
     .dropdown-content {
        top: 58px; 
      }
@@ -337,18 +307,18 @@
   
     /************* Footer end**********/
   }
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 325px) and (max-width: 480px) {
     /************* Header start**********/
     header {
       height: 80px;
-  
+      grid-template-columns: 1.5fr repeat(5, 1fr);
       grid-template-areas: "logo title title title navm navm";
     }
   
-    .logo {
+    /* .logo {
       width: 73px;
       height: 55px;
-    }
+    } */
   
     .title {
       font-size: 1.1rem;
@@ -368,6 +338,10 @@
   
     .btn_nav > a {
       font-size: 1rem;
+    }
+
+    main:hover .dropdown-content  {
+      display: none;
     }
 
     .dropdown-content {
@@ -394,7 +368,7 @@
     /************* Header start**********/
     header {
       height: 100px;
-  
+     
       grid-template-areas: "logo title title title navm navm";
     }
   
@@ -408,6 +382,10 @@
   
     .nav_menu {
       display: flex;
+    }
+
+    main:hover .dropdown-content  {
+      display: none;
     }
   
     .btn_nav > a:before {
@@ -444,7 +422,7 @@
       grid-template-areas: "logo . nav nav nav nav";
     }
     .nav_main {
-      gap: 7%;
+      gap: 5%;
     }
   
     .title {
@@ -466,10 +444,10 @@
     /************* Footer end**********/
   }
   
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1400px) {
     /************* Header start**********/
     header {
-      height: 145px;
+      height: 140px;
   
       grid-template-areas: "logo title title nav nav nav";
     }

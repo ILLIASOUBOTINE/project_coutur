@@ -1,0 +1,405 @@
+main {
+   
+    width: 90vw;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    
+    grid-template-areas:
+        
+        ". title1 title1 title1 ."
+        ". s1 s1 s1 ."
+        ". s1 s1 s1 ."
+        ". s2 s2 s2 ."
+}
+
+.return_page {
+  
+    width: calc(20px + 10vw);
+    height: calc(10px + 5vw);
+    transform: rotate(180deg);
+    
+}
+
+.return {
+   
+    display: flex;
+    justify-content: flex-start;
+}
+
+.return_page:hover {
+   
+    transform: rotate(180deg) scale(1.5);
+}
+
+.first_section {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    color: var(--second_color_lightyelow);
+    display: grid;
+    grid-template-columns: 1f 1f;
+    background-color: var(--main_color_blue);
+    grid-area: s1;
+    padding: 1vh;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "title2 title2"
+        "img1 img2"
+        "s2_text s2_text";
+}
+
+.first_section p {
+    padding: 10px;
+}
+.title1, .title2, .title3, .name{
+    font-family: var(--font_family_main);
+    font-weight: 100;
+    color: var(--second_color_lightyelow);
+}
+.s2_text, .description{
+    font-family: var(--font_family_seconder);
+}
+
+.title1 {
+    /* align-self: center; */
+    border-radius: 20px;
+    display: flex;
+    font-size: calc(0.5em + 1.5vw);
+    grid-area: title1;
+    background-color: var(--main_color_blue);
+    color: var(--second_color_lightyelow);
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    /* margin-top: 5%; */
+    padding: 5%;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.img1 {
+    grid-area: img1;
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.img2 {
+    grid-area: img2;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+    border-radius: 20px;
+}
+
+.s2_text {
+    grid-area: s2_text;
+}
+
+.second_section {
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        " title3 title3 "
+        " carte1 carte2 ";
+    gap: 20px;
+    grid-area: s2;
+    color: var(--second_color_lightyelow);
+}
+
+.title3 {
+    border-radius: 20px;
+    font-size: calc(10px + 2vw);
+    height: 50px;
+    width: 100%;
+    grid-area: title3;
+    background-color: var(--main_color_blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+#sec2_carte1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    grid-area: carte1;
+    background-color: var(--main_color_blue);
+}
+
+#sec2_carte2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    grid-area: carte2;
+    background-color: var(--main_color_blue);
+}
+
+.mv_carte {
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.mv_img_carte {
+    height: 100%;
+    width: 100%;
+}
+
+.mv_profil {
+    height: calc(80px + 1vw);
+    width: calc(80px + 1vw);
+    display: flex;
+    position: absolute;
+    left: -5px;
+    bottom: -10px;
+}
+
+.sec2_carte div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.name {
+    margin-left: 25%;
+}
+
+
+#sec2_prof2,
+#sec2_prof1 {
+    padding: 5%;
+    height: calc(100px + 3vw);
+    width: calc(100px + 3vw);
+}
+
+.img_carte {
+    display: none;
+    height: 50%;
+    width: 100%;
+}
+
+
+
+/*********************** carusel radial ********************/
+
+.carusel_radiale {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    grid-area: carusel;
+    border-radius:  30px;
+    width: 100%;
+    height: calc(90vw*1.2);
+    /* width: 90vw;
+    height: 120vw; */
+    position: relative;
+    /* overflow: hidden; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main_color_blue);
+}
+
+.car_rad {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.card_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 30px;
+    /* top: 0;
+    left: 0; */
+    /* opacity: 0; */
+    background: var(--main_color_blue);
+    /* flex-shrink: 0; */
+}
+
+.card_item p {
+    padding: 10px;
+}
+
+.next {
+    position: absolute;
+    left: 2px;
+    top: 50%;
+}
+.prev img {
+    height: 30px;
+    width: 30px;
+}
+.next img:hover{
+    height: 40px;
+    width: 40px;
+}
+.prev img:hover{
+    height: 40px;
+    width: 40px;
+}
+.next img {
+    transform: rotate(180deg);
+    height: 30px;
+    width: 30px;
+}
+
+.prev {
+    
+    position: absolute;
+    right: 2px;
+    top: 50%;
+}
+
+.block_img {
+    width: 75%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_img img {
+    width: 40%;
+    height: 40%;
+    opacity: 0;
+}
+
+
+
+#item1:checked~#card_id1 {
+    z-index: 1;
+}
+
+#item1:checked~#card_id1>.block_img img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s, width 2s, height 2s;
+}
+
+
+#item2:checked~#card_id2 {
+    z-index: 1;
+}
+
+#item2:checked~#card_id2>.block_img img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s, width 2s, height 2s;
+}
+
+
+
+.indicator_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    /* width: 30%; */
+    /* z-index: 3; */
+}
+
+.indicator_card>label {
+    width: 20px;
+    height: 20px;
+    border: solid 2px var(--second_color_lightyelow);
+    border-radius: 50%;
+    margin-right:5px;
+}
+
+#item1:checked~.card_item>.indicator_card :nth-child(1) {
+    background-color: var(--second_color_lightyelow);
+}
+
+#item2:checked~.card_item>.indicator_card :nth-child(2) {
+    background-color: var(--second_color_lightyelow);
+}
+
+
+
+/******************************* Carusel end*************************************/
+
+
+
+@media screen and (max-width: 670px) {
+    .second_section {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        /* justify-content:  center; */
+        margin: auto;
+        grid-template-areas:
+            " nav  "
+            " title1 "
+            " carusel "
+            "s2"
+    }
+
+    .carusel_radiale {
+        display: flex;
+        color: white;
+    }
+
+    .first_section {
+        display: none;
+    }
+
+    .img1 {
+        grid-area: img1;
+        height: 70%;
+        width: 90%;
+
+    }
+
+    .img2 {
+        grid-area: img2;
+        height: 70%;
+        width: 90%;
+        margin: 5%;
+    }
+
+    .img_carte {
+        height: 70%;
+        width: 100%;
+    }
+
+    #sec2_carte1,
+    #sec2_carte2 {
+        height: 50%;
+    }
+
+    #sec2_prof1, #sec2_prof2 {
+        display: none;
+    }
+}
+

@@ -117,7 +117,7 @@ button, .int_link {
 }
 .int_link:active{
     color: var(--second_color_lightyelow);
-    box-flex-group: var(--second_color_darkblue);
+    background-color: var(--second_color_darkblue);
 }
 
 .images {

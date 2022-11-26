@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+  /* carusel radial */
+
+  .carusel_radiale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 300px;
+    height: 400px;
+
+    /* width: 90vw;
+    height: 120vw; */
+    position: relative;
+    /* overflow: hidden; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+  }
+
+  .car_rad {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .card_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* opacity: 0; */
+    
+    background-color: aliceblue;
+    /* flex-shrink: 0; */
+  }
+
+  .next  {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+   .prev {
+    position: absolute;
+    right: 0;
+    top:  50%;
+  }
+
+  .block_img {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  img {
+    width: 40%;
+    height: 40%;
+    opacity: 0;
+}
+
+ 
+
+  #item1:checked ~ #card_id1 {
+    z-index: 1;
+  }
+
+  #item1:checked ~ #card_id1 > .block_img img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s,  width 2s, height 2s;
+  }
+
+
+  #item2:checked ~ #card_id2 {
+    z-index: 1;
+  }
+
+  #item2:checked ~ #card_id2 > .block_img img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s,  width 2s, height 2s;
+  }
+
+  #item3:checked ~ #card_id3 {
+    z-index: 1;
+  }
+
+  #item3:checked ~ #card_id3 > .block_img img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s,  width 2s, height 2s;
+  }
+
+  #item4:checked ~ #card_id4 {
+    z-index: 1;
+  }
+
+  #item4:checked ~ #card_id4 > .block_img img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s,  width 2s, height 2s;
+  }
+
+  .indicator_card {
+    display: flex;
+    height: 5%;
+    width: 30%;
+    /* z-index: 3; */
+  }
+
+  .indicator_card > label {
+     width: 100%; 
+    height: 100%;
+    border: solid 2px blue;
+    border-radius: 50%;
+    margin-right: 5%;
+  }
+  
+  #item1:checked ~ .card_item > .indicator_card :nth-child(1)  {
+   background-color: rgb(11, 25, 173);
+  }
+  
+  #item2:checked ~ .card_item > .indicator_card :nth-child(2)  {
+    background-color: rgb(11, 25, 173);
+   }
+
+   #item3:checked ~.card_item >  .indicator_card :nth-child(3)  {
+    background-color: rgb(11, 25, 173);
+   }
+
+   #item4:checked ~.card_item >  .indicator_card :nth-child(4)  {
+    background-color: rgb(11, 25, 173);
+   }

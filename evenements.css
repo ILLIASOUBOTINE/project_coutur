@@ -96,16 +96,28 @@ h5 {
     font-family: var(--font_family_seconder);
 }
 
-button {
+button, .int_link {
     margin: 40px 60px 20px 60px;
     padding: 5px 10px;
     width: calc(25% + 1.5em);
     border-radius: 20px;
     background-color: var(--second_color_lightyelow);
-    font-size: .9rem;
+    font-size: 14px;
     box-shadow: 3px 3px 2px var(--second_color_darkblue);
     font-family: var(--font_family_main);
     color: var(--main_color_blue);
+}
+.int_link:link{
+    text-decoration: none;
+}
+.int_link:hover{
+    color: var(--main_color_blue);
+     background-color: var(--main_color_yelow);
+     border: 1px solid var(--second_color_darkblue);
+}
+.int_link:active{
+    color: var(--second_color_lightyelow);
+    box-flex-group: var(--second_color_darkblue);
 }
 
 .images {
@@ -118,12 +130,15 @@ button {
 .illustr {
     max-width: 30%;
     border-radius: 20px;
+    box-shadow: 3px 3px 2px var(--second_color_darkblue);
+
 }
 
 .rond {
     border-radius: 50%;
     width: 15%;
     align-self: center;
+    box-shadow: 3px 3px 2px var(--second_color_darkblue);
 }
 .boutons{
     display: flex;
@@ -143,12 +158,23 @@ button {
         display: none;
     }
     button{
-        margin: 1em 1.5em 1em 1.5em;
+        margin: 2.5em 1.5em 2.5em 1.5em;
         padding: 5px 10px;
         font-size: .7em;
         line-height: 1.5em;
-        width: calc(30% + 1em);
+        width: 30%;
         
+    }
+    .boutons{
+        align-items: center;
+    }
+    .uniq_btn, .int_link{
+        font-size: 0.6em;
+        height: 2.5em;
+        margin: 1em 0.5em;
+        width: 30%;
+        padding: 0 5%;
+        align-items: center;
     }
 }
 @media screen and (max-width:450px) {
@@ -167,8 +193,15 @@ button {
         padding: 5px;
         font-size: .6em;
         line-height: 1em;
-        width: calc(25% + 1em);
-        
+        width: calc(25% + 1em); 
+    }
+    .uniq_btn, .int_link{
+        font-size: 0.6em;
+        height: 2.5em;
+        margin: 1em 0.5em;
+        width: 50%;
+        padding: 2% 5%;
+        align-items: center;
     }
     h2{
         font-size: calc(100%);
@@ -177,7 +210,6 @@ button {
         font-size: calc(100% - .3rem);
     }
     .bandeau_card_noel, .bandeau_card_hallw, .bandeau_card_paq {
-        
         
         border-radius: 25%;
 }

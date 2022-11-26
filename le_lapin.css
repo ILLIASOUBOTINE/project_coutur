@@ -1,24 +1,45 @@
 main {
+   
     width: 90vw;
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    
     grid-template-areas:
-        ". nav nav nav ."
+        
         ". title1 title1 title1 ."
         ". s1 s1 s1 ."
         ". s1 s1 s1 ."
         ". s2 s2 s2 ."
 }
 
+.return_page {
+  
+    width: calc(20px + 10vw);
+    height: calc(10px + 5vw);
+    transform: rotate(180deg);
+    
+}
+
+.return {
+   
+    display: flex;
+    justify-content: flex-start;
+}
+
+.return_page:hover {
+   
+    transform: rotate(180deg) scale(1.5);
+}
+
 .first_section {
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    color: white;
+    color: var(--second_color_lightyelow);
     display: grid;
     grid-template-columns: 1f 1f;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
     grid-area: s1;
     padding: 1vh;
     justify-items: center;
@@ -32,19 +53,28 @@ main {
 .first_section p {
     padding: 10px;
 }
+.title1, .title2, .title3, .name{
+    font-family: var(--font_family_main);
+    font-weight: 100;
+    color: var(--second_color_lightyelow);
+}
+.s2_text, .description{
+    font-family: var(--font_family_seconder);
+}
 
 .title1 {
+    /* align-self: center; */
     border-radius: 20px;
     display: flex;
-    font-size: calc(0.5em + 2vw);
+    font-size: calc(0.5em + 1.5vw);
     grid-area: title1;
-    background-color: #085D85;
-    color: white;
+    background-color: var(--main_color_blue);
+    color: var(--second_color_lightyelow);
     justify-content: center;
     align-items: center;
     height: 40%;
-    margin-top: 5%;
-    padding: 1%;
+    /* margin-top: 5%; */
+    padding: 5%;
 }
 
 .title2 {
@@ -55,6 +85,7 @@ main {
     grid-area: img1;
     height: 90%;
     width: 90%;
+    border-radius: 20px;
 }
 
 .img2 {
@@ -62,6 +93,7 @@ main {
     height: 90%;
     width: 90%;
     margin: 5%;
+    border-radius: 20px;
 }
 
 .s2_text {
@@ -77,7 +109,7 @@ main {
         " carte1 carte2 ";
     gap: 20px;
     grid-area: s2;
-    color: white;
+    color: var(--second_color_lightyelow);
 }
 
 .title3 {
@@ -86,7 +118,7 @@ main {
     height: 50px;
     width: 100%;
     grid-area: title3;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +135,7 @@ main {
     flex-direction: column;
     width: auto;
     grid-area: carte1;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
 }
 
 #sec2_carte2 {
@@ -115,7 +147,7 @@ main {
     flex-direction: column;
     width: auto;
     grid-area: carte2;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
 }
 
 .mv_carte {
@@ -221,7 +253,14 @@ label {
     height: 30px;
     width: 30px;
 }
-
+.next img:hover{
+    height: 40px;
+    width: 40px;
+}
+.prev img:hover{
+    height: 40px;
+    width: 40px;
+}
 .next img {
     transform: rotate(180deg);
     height: 30px;

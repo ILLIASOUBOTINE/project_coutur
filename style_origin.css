@@ -65,7 +65,8 @@
   
   /******************** Header start****************************** */
   header {
-    /* position: relative; */
+      
+
      height: 150px;
      flex-shrink: 0;
      margin-bottom: 20px;
@@ -91,14 +92,14 @@
     align-items: center;
   }
   
-  .logo > img {
+  .logo  img {
     width: 90%;
     height: 90%;
     animation-name: example2;
    animation-duration: 20s;
    animation-iteration-count: infinite;
   }
-  .logo>img:hover{
+  .logo img:hover{
     animation-name: none;
 }
 
@@ -146,7 +147,7 @@
     right: 0;
     top: 70px;
     background: var(--main_color_yelow);
-    z-index: 1;
+    z-index: 10;
   }
   
   .dropdown-content > a{
@@ -281,6 +282,11 @@
     .btn_nav > a {
       font-size: 1rem;
     }
+
+    main:hover .dropdown-content  {
+      display: none;
+    }
+
     .dropdown-content {
        top: 58px; 
      }
@@ -334,6 +340,10 @@
       font-size: 1rem;
     }
 
+    main:hover .dropdown-content  {
+      display: none;
+    }
+
     .dropdown-content {
      top: 58px;
     }
@@ -372,6 +382,10 @@
   
     .nav_menu {
       display: flex;
+    }
+
+    main:hover .dropdown-content  {
+      display: none;
     }
   
     .btn_nav > a:before {

@@ -11,6 +11,24 @@ main {
         ". s2 s2 s2 ."
 }
 
+.return_page {
+  
+    width: calc(20px + 10vw);
+    height: calc(10px + 5vw);
+    transform: rotate(180deg);
+}
+
+.return {
+    
+    display: flex;
+    justify-content: flex-start;
+}
+
+.return_page:hover {
+   
+    transform: rotate(180deg) scale(1.5);
+}
+
 .first_section {
     /* height: 100%;
     width: 100%; */
@@ -50,15 +68,14 @@ main {
 .title1 {
     border-radius: 20px;
     display: flex;
-    font-size: calc(15px + 1vw);
+    font-size: calc(13px + 0.8vw);
     grid-area: title1;
     background-color: #085D85;
-    color: white;
     justify-content: center;
     align-items: center;
     height: 40%;
-    margin-top: 5%;
-    padding: 1%;
+    /* margin-top: 5%; */
+    padding: 5%;
 }
 
 .title2 {
@@ -76,7 +93,7 @@ main {
         " carte1 carte2 ";
     gap: 20px;
     grid-area: s2;
-    color: white;
+    color: var(--second_color_lightyelow);
 }
 
 .title3 {
@@ -85,12 +102,20 @@ main {
     height: 50px;
     width: 100%;
     grid-area: title3;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
     padding: 1%;
+}
+.title1, .title2, .title3, .name{
+    font-family: var(--font_family_main);
+    color: var(--second_color_lightyelow);
+}
+.s1_text1, .s1_text2, .description{
+    font-family: var(--font_family_seconder);
+    color: var(--second_color_lightyelow);
 }
 
 #sec2_carte1 {
@@ -101,7 +126,7 @@ main {
     display: flex;
     flex-direction: column;
     grid-area: carte1;
-    background-color: #085D85;
+    background-color: var(--main_color_blue);
     justify-content: space-around;
 }
 
@@ -230,6 +255,14 @@ label {
 
     height: 30px;
     width: 30px;
+}
+.next img:hover{
+    height: 40px;
+    width: 40px;
+}
+.prev img:hover{
+    height: 40px;
+    width: 40px;
 }
 
 .prev {

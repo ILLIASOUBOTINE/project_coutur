@@ -42,6 +42,8 @@ main {
   align-items: center;
   justify-items: center;
   margin-left: 10%;
+  box-shadow: 3px 3px 2px var(--second_color_darkblue);
+
 }
 
 .photo_home_page {
@@ -98,6 +100,7 @@ main {
   border: var(--second_color_darkblue) solid 1px;
   border-radius: 30px;
   text-align: center;
+  box-shadow: 3px 3px 2px var(--second_color_darkblue);
 }
 
 .calendrie_home_page a {
@@ -124,6 +127,7 @@ main {
   border: var(--second_color_darkblue) solid 1px;
   border-radius: 30px;
   text-align: center;
+  box-shadow: 3px 3px 2px var(--second_color_darkblue);
 }
 
 .event_venir {
@@ -189,7 +193,7 @@ main {
 .calendrie_home_page:hover {
   background:var(--second_color_darkblue) ;
   border: 4px solid var(--main_color_yelow);
-  transition: all 0.3s linear;
+  transition: all 0.15s linear;
 }
 
 /******************** Main end****************************** */
@@ -333,7 +337,7 @@ main {
 
   /************* Main start**********/
   main {
-    height: 90%;
+    /* height: 90%; */
     grid-template-columns:  1fr ;
     grid-template-rows:  3fr 1fr; 
     gap: 20px;
@@ -391,8 +395,8 @@ main {
   
 /************* Main start**********/
   main {
-    height: 90%;
-    /* height: 640px; */
+    /* height: 90%; */
+    height: 640px;
     grid-template-columns: 3fr 1fr;
   }
 
@@ -428,9 +432,9 @@ main {
 }
 
 @media screen and (min-width: 1024px)  {
-  main {
+  /* main {
     height: 90%;
-  }
+  } */
 }
 @media screen and (min-width: 1280px) {
   

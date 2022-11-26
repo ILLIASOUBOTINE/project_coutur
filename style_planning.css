@@ -65,6 +65,7 @@ td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     background-color: var(--main_color_blue);
     grid-area: fo;
@@ -77,6 +78,7 @@ td {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    /* width: 80%; */
 }
 
 .form .legend {
@@ -99,7 +101,8 @@ td {
     font-weight: 700;
     justify-self: center;
     height: 30px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     border: 1px solid var(--main_color_blue);
     border-radius: 20px;
     color: var(--main_color_blue);
@@ -133,6 +136,7 @@ label{
     gap: 10%;
     width: 100%;
     grid-area: ar1;
+    text-align: center;
 }
 .aside_title{
     font-family: var(--font_family_main);
@@ -151,7 +155,7 @@ label{
     color: var(--second_color_lightyelow);
     border: 1px solid black;
     border-radius: 15px;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 
 .ar1 p {

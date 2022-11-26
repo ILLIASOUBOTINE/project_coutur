@@ -241,9 +241,29 @@ label{
     .aside_right {
         display: none;
     }
-
+.int_link_mob{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font_family_main);
+    background-color:var(--main_color_blue);
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 3%;
+    width: 70%;
+    height: auto;
+}
+.int_link_mob{
+    text-decoration: none;
+}
+.int_link_mob:hover{
+    color:var(--main_color_yelow);
+    border: 2px solid var(--main_color_yelow);
+}
     .vm_jour {
-        background-color: #085D85;
+        background-color: var(--main_color_blue);
+        font-family: var(--font_family_seconder);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -254,7 +274,7 @@ label{
     }
 
     .vm_jour button {
-        background-color: #085D85;
+        background-color:var(--main_color_blue);
         border: 2px solid white;
         color: white;
         border-radius: 20px;
@@ -279,7 +299,7 @@ label{
     .vm_last_event,
     .vm_next_event {
         width: 45%;
-        background-color: #085D85;
+        background-color: var(--main_color_blue);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -291,13 +311,14 @@ label{
     }
     .vm_last_event p,
     .vm_next_event p {
+        font-family: var(--font_family_seconder);
         margin: 15px;
         font-size: calc(15px + 1vw);
         text-align: center ;
     }
 
     .vm_aside_top button {
-        background-color: #085D85;
+        background-color: var(--main_color_blue);
         border: 2px solid white;
         color: white;
         border-radius: 20px;

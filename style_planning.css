@@ -133,7 +133,7 @@ label{
 .aside_right {
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 5%;
     width: 100%;
     grid-area: ar1;
     text-align: center;
@@ -166,7 +166,7 @@ label{
 .event_next, .event_last {
     font-family: var(--font_family_main);
     color: black;
-    width: 80%;
+    width: 90%;
     border: 1px solid var(--main_color_blue);
     border-radius: 10px;
     background-color: var(--second_color_lightyelow);
@@ -228,12 +228,16 @@ label{
 @media screen and (max-width: 600px) {
 
     main {
+        
         display: flex;
         flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
 
     }
 
     .v_mobile {
+       
         display: flex;
         flex-direction: column;
     }
@@ -245,6 +249,7 @@ label{
     .aside_right {
         display: none;
     }
+
 .int_link_mob{
     display: flex;
     justify-content: center;
@@ -254,13 +259,13 @@ label{
     color: white;
     border-radius: 20px;
     margin: 5%;
-    padding: 3%;
+    padding: 15%;
     width: 70%;
     height: auto;
-}
-.int_link_mob{
     text-decoration: none;
+    font-size: calc(12px + 1vw);
 }
+
 .int_link_mob:hover{
     color:var(--main_color_yelow);
     border: 2px solid var(--main_color_yelow);
@@ -274,7 +279,13 @@ label{
         align-items: center;
         border-radius: 20px;
         margin: 5%;
+        padding: 5%;
         color: white;
+    }
+
+    .vm_jour > h2 {
+        font-size: calc(17px + 1vw);
+        margin: 3%;
     }
 
     .vm_jour button {
@@ -282,17 +293,28 @@ label{
         border: 2px solid white;
         color: white;
         border-radius: 20px;
+        padding: 2%;
         margin: 3%;
-        width: 70%;
+        width: 95%;
         height: auto;
+        font-size: calc(12px + 1vw);
+        font-family: var(--font_family_seconder);
     }
 
-
+    form{
+        width: 80%;
+    }
 
     .form {
         margin: 5%;
         align-items: center;
-        padding: 10%;
+        padding: 5% 2%;
+    }
+
+    .aside_title {
+        font-size: calc(15px + 1vw);
+        margin: 2% auto;
+
     }
 
     .vm_aside_top {
@@ -310,15 +332,21 @@ label{
         align-items: center;
         border-radius: 20px;
         margin: 5%;
-        color: white;
+        /* color: white; */
         padding: 10px 0 20px 0;
     }
-    .vm_last_event p,
-    .vm_next_event p {
+    .vm_event{
         font-family: var(--font_family_seconder);
-        margin: 15px;
-        font-size: calc(15px + 1vw);
+         margin: 5px; 
+        font-size: calc(10px + 1vw);
         text-align: center ;
+        cursor: pointer;
+        text-decoration: underline;
+        color: white;
+    }
+
+    .vm_event:hover {
+        color: var(--main_color_yelow);
     }
 
     .vm_aside_top button {
@@ -330,6 +358,7 @@ label{
         width: 70%;
         height: auto;
         padding: 10px;
+       
         
     }
 

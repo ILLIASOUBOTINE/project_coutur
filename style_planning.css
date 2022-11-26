@@ -79,7 +79,7 @@ td {
     align-items: flex-end;
 }
 
-.form legend {
+.form .legend {
     font-family: var(--font_family_main);
     font-size: calc(15px + 1vw);
     margin-bottom: 20px;

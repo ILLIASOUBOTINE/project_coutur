@@ -145,13 +145,13 @@ h2 {
 .container {
     position: relative;
     display: block;
-    
-    width: 90%;
+    width: 100%;
+    margin: auto;
 }
 
 .fond_img {
     /* display: block; */
-    width: 85%;
+    width: 90%;
     height: 100%;
     border-radius: 20px;
 }
@@ -255,7 +255,7 @@ h2 {
         font-size: 0.85em;
         line-height: calc(90% + 1em);
         padding: 1.5em;
-        width: 110%;
+        width: 90%;
         overflow: hidden;
         text-overflow: ellipsis;
 

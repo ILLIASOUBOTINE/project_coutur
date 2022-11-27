@@ -273,6 +273,8 @@ label{
     .vm_jour {
         background-color: var(--main_color_blue);
         font-family: var(--font_family_seconder);
+        font-size: 0.8em;
+        padding: 3%;
         display: flex;
         flex-direction: column;
         justify-content: center;
